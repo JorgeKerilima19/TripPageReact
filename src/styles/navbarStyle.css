@@ -1,7 +1,7 @@
 .header {
   height: var(--header-height);
-  border-bottom: thin solid black;
   padding: 0 1rem;
+  background-color: var(--primary-color);
 }
 .nav{
   display: flex;
@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--font-color-primary);
 }
 .navbar{
   display: flex;

@@ -7,16 +7,25 @@ html {
   padding: 0;
   margin: 0;
 }
+body{
+  background-color: var(--bg-color);
+  font-size: 100%;
+}
 a{
   font-size: inherit;
   color: inherit;
 }
 :root {
   --header-height: 5rem;
+  --bg-color:hsl(36, 100%, 99%);
+  --primary-color:hsl(24, 100%, 50%);
+  --secondary-color:hsl(0, 100%, 22%);
+  --tertiary-color:hsl(171, 100%, 16%);
+  --font-color-primary:hsl(0, 0%, 93%);
 }
 .svg-holder-image {
   width: 3rem;
   height: 3rem;
-  background-color: gray;
+  background-color: var(--secondary-color);
   border-radius: 50%;
 }
