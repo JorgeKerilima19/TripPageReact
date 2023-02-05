@@ -10,8 +10,8 @@ export default function Navbar() {
         <ul className="navbar">
           {NavItems.map((item, index) => {
             return (
-              <li key={index}>
-                <a href="/">
+              <li key={index} className="navbar-item">
+                <a href="/" className="item-link">
                   <svg className={item.className}></svg>
                   {item.title}
                 </a>

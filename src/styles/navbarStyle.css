@@ -1,17 +1,26 @@
 .header {
   height: var(--header-height);
   border-bottom: thin solid black;
+  padding: 0 1rem;
 }
 .nav{
   display: flex;
-  background-color: violet;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navbar{
-  background-color: gainsboro;
   display: flex;
-
+  list-style: none;
+  gap: 0.5rem;
+}
+.navbar-item{
+  min-width: 8rem;
+}
+.item-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
 }
