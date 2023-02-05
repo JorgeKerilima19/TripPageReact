@@ -1,0 +1,17 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --header-height: 5rem;
+}
+.svg-holder-image {
+  width: 3rem;
+  height: 3rem;
+  background-color: gray;
+  border-radius: 50%;
+}
