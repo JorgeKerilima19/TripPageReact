@@ -1,19 +1,16 @@
 import Navbar from "./jsx/navbar";
-import React,{useState} from "react";
-
+import HamburgerMenu from "./jsx/HamburgerMenu";
+import React, { useState } from "react";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  function setOpen(){
+    setIsOpen(isOpen=>!isOpen)
+  }
   return (
     <header className="header">
-      <div className="hamburger-btn" onClick={()=>{
-        setIsOpen(true)
-      }}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
-        <Navbar isOpen={isOpen} onChange={setIsOpen}></Navbar>
+      <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
+      <Navbar />
     </header>
   );
 }
