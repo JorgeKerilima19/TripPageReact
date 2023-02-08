@@ -19,6 +19,11 @@ export default function Navbar() {
             );
           })}
         </ul>
+        <div className="hamburger-btn">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </nav>
     </header>
   );

@@ -29,3 +29,8 @@ a{
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
+.header {
+  height: var(--header-height);
+  padding: 0 1rem;
+  background-color: var(--primary-color);
+}

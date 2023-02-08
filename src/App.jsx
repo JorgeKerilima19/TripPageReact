@@ -1,10 +1,11 @@
 import Navbar from "./jsx/navbar";
+import React,{useState} from "react";
+
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <>
-    <Navbar/>
-    </>
+    <header className="header"></header>
   );
 }
 
