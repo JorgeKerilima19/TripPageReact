@@ -10,7 +10,7 @@ function App() {
   return (
     <header className="header">
       <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
-      <Navbar />
+      <Navbar isOpen={isOpen} />
     </header>
   );
 }
