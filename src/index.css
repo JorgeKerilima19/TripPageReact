@@ -42,26 +42,31 @@ a{
   position: fixed;
   bottom: 0;
   right: 50%;
-  transform: translate(50%, -15%);
-  height: 3.5em;
-  width: 3.5rem;
+  transform: translate(50%, 0%);
+  height: 3rem;
+  width: 3rem;
   background-color: var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
   transition: 0.5s;
   z-index: 999;
+  margin-bottom: 1rem;
+}
+.hamburger-btn.open{
+  transform: translate(50%, 0%);
 }
 .bar {
-  width: 2rem;
-  height: 3px;
+  width: 1.5rem;
+  height: 0.2rem;
   background-color: var(--bg-color);
-  margin: 5px auto;
+  margin: 0.26rem auto;
+  transition: 0.5s;
 }
 .hamburger-btn.open .bar:nth-child(1) {
   display: none;
 }
 .hamburger-btn.open .bar:nth-child(2) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
 }
 .hamburger-btn.open .bar:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
