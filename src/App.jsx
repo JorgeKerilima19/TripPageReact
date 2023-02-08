@@ -5,7 +5,9 @@ import React,{useState} from "react";
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className="header"></header>
+    <header className="header">
+      <Navbar></Navbar>
+    </header>
   );
 }
 
