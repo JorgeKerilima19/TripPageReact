@@ -7,6 +7,11 @@ function App() {
   return (
     <header className="header">
       <Navbar></Navbar>
+      <div className="hamburger-btn">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
     </header>
   );
 }
