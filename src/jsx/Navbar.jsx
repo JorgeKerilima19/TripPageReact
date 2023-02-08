@@ -2,7 +2,7 @@ import "../index.css";
 import "../styles/navbarStyle.css";
 import { NavItems } from "../js/navbarItems";
 
-export default function Navbar() {
+export default function Navbar(isOpen, onChange) {
   return (
     <nav className="nav">
       <svg className="svg-holder-image"></svg>

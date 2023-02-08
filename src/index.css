@@ -33,6 +33,7 @@ a{
   height: var(--header-height);
   padding: 0 1rem;
   background-color: var(--primary-color);
+  position: relative;
 }
 .hamburger-btn {
   display: none;
@@ -65,10 +66,10 @@ a{
 .hamburger-btn.open .bar:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
 }
-.open {
-  transform: translate(0);
-}
 @media (max-width:700px){
+  .header{
+    padding: 0;
+  }
   .hamburger-btn{
     display: flex;
   }
