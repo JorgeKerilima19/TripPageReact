@@ -1,6 +1,7 @@
 import "../index.css";
 import "../styles/navbarStyle.css";
 import { NavItems } from "../js/navbarItems";
+import { Link } from "react-router-dom";
 
 export default function Navbar({isOpen, setOpen}) {
   let toggleOpen = isOpen ? "open" : "";
@@ -11,10 +12,10 @@ export default function Navbar({isOpen, setOpen}) {
         {NavItems.map((item, index) => {
           return (
             <li key={index} className="navbar-item">
-              <a href="/" className="item-link">
+              <Link className="item-link" to={item.url}>
                 <svg className={item.className}></svg>
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
