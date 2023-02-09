@@ -3,7 +3,7 @@ import "../styles/navbarStyle.css";
 import { NavItems } from "../js/navbarItems";
 import { Link } from "react-router-dom";
 
-export default function Navbar({isOpen, setOpen}) {
+export default function Navbar({ isOpen, setOpen }) {
   let toggleOpen = isOpen ? "open" : "";
   return (
     <nav className="nav">
