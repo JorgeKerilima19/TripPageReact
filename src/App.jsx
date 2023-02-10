@@ -22,8 +22,8 @@ function App() {
           <Navbar isOpen={isOpen} />
           <Routes>
             <Route path="/about" element={<About />} />
-            <Route path="/service" element={<Contact />} />
-            <Route path="/contact" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Services />} />
             <Route path="/register" element={<Register />} />
             <Route path="/" element={<Home />} />
           </Routes>

@@ -1,4 +1,7 @@
+import HeroImage from "../jsx/HeroImage";
 export default function Contact() {
-    return <h2>This is Contact</h2>;
+    return <>
+    <HeroImage src="Contact"></HeroImage>
+    </>;
   }
   
