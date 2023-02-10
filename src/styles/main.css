@@ -5,11 +5,23 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  backdrop-filter: brightness(0);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hero-image_title{
+.hero-section::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  filter: opacity(0.5);
+  position: absolute;
+}
+.hero-section > * {
+  z-index: 100;
+}
+.hero-image_title {
   font-size: 5em;
   color: var(--font-color-primary);
 }
