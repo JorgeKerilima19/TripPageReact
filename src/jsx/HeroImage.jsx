@@ -13,8 +13,7 @@ export default function HeroImage({ src }) {
               style={{ backgroundImage: `url(${el.image})` }}
             >
               <div>
-                <h2>{el.title}</h2>
-                <span>Description</span>
+                <h2 className="hero-image_title">{el.title}</h2>
               </div>
             </section>
           );

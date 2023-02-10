@@ -1,8 +1,15 @@
 .hero-section {
   position: relative;
-  height: max(40rem, 50vh);
+  height: max(35rem, 50vh);
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image_title{
+  font-size: 5em;
+  color: var(--font-color-primary);
 }

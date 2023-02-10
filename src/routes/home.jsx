@@ -1,3 +1,5 @@
+import HeroImage from "../jsx/HeroImage";
+
 export default function Home() {
-  return <h2>This is Home</h2>;
+  return <HeroImage src={"Home"}></HeroImage>;
 }
