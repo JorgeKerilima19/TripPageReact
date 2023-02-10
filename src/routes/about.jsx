@@ -1,3 +1,7 @@
+import HeroImage from "../jsx/HeroImage";
+
 export default function About() {
-  return <h2>This is About</h2>;
+  return <>
+  <HeroImage></HeroImage>
+  </>;
 }

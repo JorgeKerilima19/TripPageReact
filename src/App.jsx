@@ -14,6 +14,7 @@ function App() {
   function setOpen() {
     setIsOpen((isOpen) => !isOpen);
   }
+
   return (
     <>
       <header className="header">
