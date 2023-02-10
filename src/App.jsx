@@ -17,9 +17,13 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <BrowserRouter>
+      <BrowserRouter>
+        <header className="header">
           <Navbar isOpen={isOpen} />
+
+          <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
+        </header>
+        <main className="main">
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -27,10 +31,8 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/" element={<Home />} />
           </Routes>
-        </BrowserRouter>
-        <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
-      </header>
-      <main className="main"></main>
+        </main>
+      </BrowserRouter>
     </>
   );
 }
