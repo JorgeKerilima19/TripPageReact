@@ -1,4 +1,4 @@
-import { NavItems as data } from "../js/navbarItems";
+import { NavItems as data } from "../data/navbarItems";
 import "../styles/main.css";
 
 export default function HeroImage({ src }) {

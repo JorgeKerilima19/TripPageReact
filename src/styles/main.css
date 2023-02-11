@@ -45,3 +45,28 @@
 .hide {
   display: none;
 }
+.card-container {
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.destination-card {
+  background-color: aqua;
+  width: max(15rem, 25%);
+}
+.destination-card_images {
+  height: 25rem;
+  width: min(100%, 40rem);
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+.destination-card_images img {
+  width: 48%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+}

@@ -1,6 +1,6 @@
 import "../index.css";
 import "../styles/navbarStyle.css";
-import { NavItems } from "../js/navbarItems";
+import { NavItems } from "../data/navbarItems";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ isOpen, setOpen }) {
