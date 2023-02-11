@@ -55,9 +55,10 @@
 .destination-card {
   background-color: aqua;
   width: max(15rem, 25%);
+  padding: 1rem;
 }
 .destination-card_images {
-  height: 25rem;
+  height: 18rem;
   width: min(100%, 40rem);
   display: flex;
   position: relative;
