@@ -4,15 +4,14 @@ import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";
 
 export default function Home() {
-  console.log(data);
   return (
     <>
       <HeroImage src={"Home"}></HeroImage>
-      <h2>Popular Destinations</h2>
+      <h2 className="section-title">Popular Destinations</h2>
       <section className="card-container">
-        {data.map((item)=>{
+        {data.map((item, index)=>{
           return(
-            <Destinations item={item}></Destinations>
+            <Destinations key={index} item={item}></Destinations>
           )
         })}
       </section>
