@@ -1,27 +1,27 @@
 html {
-  font-size: clamp(100%,110%,120%);
-  font-family: 'Raleway', sans-serif;
+  font-size: clamp(100%, 110%, 120%);
+  font-family: "Raleway", sans-serif;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: var(--bg-color);
   font-size: 100%;
 }
-a{
+a {
   font-size: inherit;
   color: inherit;
 }
 :root {
   --header-height: 5rem;
-  --bg-color:hsl(36, 100%, 99%);
-  --primary-color:hsl(24, 100%, 50%);
-  --secondary-color:hsl(0, 100%, 22%);
-  --tertiary-color:hsl(171, 100%, 16%);
-  --font-color-primary:hsl(0, 0%, 93%);
+  --bg-color: hsl(36, 100%, 99%);
+  --primary-color: hsl(24, 100%, 50%);
+  --secondary-color: hsl(0, 100%, 22%);
+  --tertiary-color: hsl(171, 100%, 16%);
+  --font-color-primary: hsl(0, 0%, 93%);
 }
 .svg-holder-image {
   width: 3rem;
@@ -29,7 +29,7 @@ a{
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
-.logo-holder{
+.logo-holder {
   width: 4rem;
   height: 4rem;
   background-color: black;
@@ -39,7 +39,7 @@ a{
   padding: 0 1rem;
   background-color: var(--primary-color);
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 999;
 }
 .hamburger-btn {
@@ -59,7 +59,7 @@ a{
   z-index: 999;
   margin-bottom: 1rem;
 }
-.hamburger-btn.open{
+.hamburger-btn.open {
   transform: translate(50%, 0%);
 }
 .bar {
@@ -78,19 +78,19 @@ a{
 .hamburger-btn.open .bar:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
 }
-@media (max-width:850px) {
-  .svg-holder-image{
+@media (max-width: 850px) {
+  .svg-holder-image {
     display: none;
   }
-  .logo-holder{
+  .logo-holder {
     display: block;
   }
 }
-@media (max-width:700px){
-  .header{
+@media (max-width: 650px) {
+  .header {
     padding: 0;
   }
-  .hamburger-btn{
+  .hamburger-btn {
     display: flex;
   }
 }

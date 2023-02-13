@@ -39,7 +39,7 @@
 .item-link:hover.item-link::after {
   width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .navbar {
     position: fixed;
     padding-bottom: 5rem;
@@ -61,5 +61,10 @@
   }
   .open {
     transform: translate(0);
+  }
+}
+@media (max-width: 850px) {
+  .navbar-item {
+    min-width: 5rem;
   }
 }
