@@ -5,10 +5,13 @@ import { Link } from "react-router-dom";
 
 export default function Navbar({ isOpen, setOpen }) {
   let toggleOpen = isOpen ? "open" : "";
+  function consolel(){
+    console.log("Xd")
+  }
   return (
     <nav className="nav">
-      <svg className="svg-holder-image logo-holder"></svg>
-      <ul className={`navbar ${toggleOpen}`} onClick={setOpen}>
+      <svg className="logo-holder"></svg>
+      <ul className={`navbar ${toggleOpen}`} onClick={setOpen} onChange={consolel}>
         {NavItems.map((item, index) => {
           return (
             <li key={index} className="navbar-item">

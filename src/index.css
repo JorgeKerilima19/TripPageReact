@@ -82,9 +82,6 @@ a {
   .svg-holder-image {
     display: none;
   }
-  .logo-holder {
-    display: block;
-  }
 }
 @media (max-width: 650px) {
   .header {
