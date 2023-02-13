@@ -32,15 +32,15 @@
   justify-content: space-evenly;
 }
 .hero-image_title {
-  font-size: max(4em,8vw);
+  font-size: max(4em, 8vw);
 }
 .hero-image_slogan {
-  font-size: max(2em,4vw);
+  font-size: max(2em, 4vw);
 }
 .button {
   font-size: inherit;
   font-family: inherit;
-  width: max(20vw,8rem);
+  width: max(20vw, 8rem);
   padding: 1.5em 0;
   outline: 0;
   border-radius: 0.5em;
@@ -72,6 +72,9 @@
   padding: 2em 0 3em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card-container .destination-card:nth-child(even) {
+  flex-flow: row wrap;
 }
 .destination-card_images {
   height: 20rem;

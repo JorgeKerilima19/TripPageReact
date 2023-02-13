@@ -14,7 +14,7 @@ export default function Navbar({ isOpen, setOpen }) {
             <li key={index} className="navbar-item">
               <Link className="item-link" to={item.url}>
                 <svg className={item.className}></svg>
-                {item.title}
+                <span className="item-link_text">{item.title}</span>
               </Link>
             </li>
           );
