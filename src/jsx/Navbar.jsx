@@ -7,7 +7,7 @@ export default function Navbar({ isOpen, setOpen }) {
   let toggleOpen = isOpen ? "open" : "";
   return (
     <nav className="nav">
-      <svg className="svg-holder-image"></svg>
+      <svg className="svg-holder-image logo-holder"></svg>
       <ul className={`navbar ${toggleOpen}`} onClick={setOpen}>
         {NavItems.map((item, index) => {
           return (
