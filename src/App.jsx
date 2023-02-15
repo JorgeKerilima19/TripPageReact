@@ -19,7 +19,7 @@ function App() {
     <>
       <BrowserRouter>
         <header className="header">
-          <Navbar isOpen={isOpen} />
+          <Navbar isOpen={isOpen} setOpen={setOpen} />
 
           <HamburgerMenu isOpen={isOpen} setOpen={setOpen} />
         </header>
