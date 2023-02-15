@@ -79,11 +79,6 @@ a {
 .hamburger-btn.open .bar:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
 }
-@media (max-width: 850px) {
-  .svg-holder-image {
-    display: none;
-  }
-}
 @media (max-width: 650px) {
   .header {
     padding: 0;

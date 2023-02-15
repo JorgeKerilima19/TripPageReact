@@ -13,7 +13,6 @@ export default function Navbar({ isOpen, setOpen }) {
           return (
             <li key={index} className="navbar-item">
               <Link className="item-link" to={item.url} onClick={setOpen}>
-                <svg className={item.className}></svg>
                 <span className="item-link_text">{item.title}</span>
               </Link>
             </li>

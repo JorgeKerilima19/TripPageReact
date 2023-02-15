@@ -15,14 +15,18 @@
   z-index: 999;
 }
 .navbar-item {
-  min-width: 8rem;
-  max-width: 16rem;
+  min-width: 6rem;
+  max-width: 10rem;
+}
+.item-link_icon{
+  width: 50%;
 }
 .item-link {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 1rem;
   text-decoration: none;
   font-size: 1em;
 }
