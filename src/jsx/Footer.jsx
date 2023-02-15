@@ -23,19 +23,19 @@ export default function Footer() {
 
         <ul className="list-column">
           <h3>Follow Us</h3>
-          <li>
+          <li className="list-item-link">
             <TiSocialFacebook />
             <span>Facebook</span>
           </li>
-          <li>
+          <li className="list-item-link">
             <TiSocialTwitter />
             <span>Twitter</span>
           </li>
-          <li>
+          <li className="list-item-link">
             <TiSocialInstagram />
             <span>Instagram</span>
           </li>
-          <li>
+          <li className="list-item-link">
             <TiSocialYoutube />
             <span>Youtube</span>
           </li>
