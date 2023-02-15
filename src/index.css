@@ -22,6 +22,7 @@ a {
   --secondary-color: hsl(0, 100%, 22%);
   --tertiary-color: hsl(171, 100%, 16%);
   --font-color-primary: hsl(0, 0%, 93%);
+  --max-width: 88rem;
 }
 .svg-holder-image {
   width: 3rem;

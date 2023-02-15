@@ -5,6 +5,8 @@
   justify-content: space-between;
   align-items: center;
   color: var(--font-color-primary);
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 .navbar {
   display: flex;

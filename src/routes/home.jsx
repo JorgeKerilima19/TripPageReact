@@ -7,15 +7,17 @@ import RecentTrips from "../jsx/RecentTrips";
 export default function Home() {
   return (
     <>
-      <HeroImage src={"Home"}></HeroImage>
+      <HeroImage src={"Home"}/>
       <h2 className="section-title">Popular Destinations</h2>
-      <section className="card-container">
-        {data.map((item, index) => {
-          return <Destinations key={index} item={item}></Destinations>;
-        })}
-      </section>
+      <div className="first-container">
+        <section className="card-container">
+          {data.map((item, index) => {
+            return <Destinations key={index} item={item}/>;
+          })}
+        </section>
+      </div>
       <h2>Recent Trips</h2>
-      <RecentTrips></RecentTrips>
+      <RecentTrips/>
     </>
   );
 }

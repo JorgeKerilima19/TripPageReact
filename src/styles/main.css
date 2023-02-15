@@ -49,6 +49,10 @@
 .hide {
   display: none;
 }
+.first-container {
+  max-width: var(--max-width);
+  margin: auto;
+}
 .section-title {
   font-size: 2em;
   margin: 3rem auto;
