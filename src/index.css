@@ -16,7 +16,7 @@ a {
   color: inherit;
 }
 :root {
-  --header-height: 5rem;
+  --header-height: 4rem;
   --bg-color: hsl(36, 100%, 99%);
   --primary-color: hsl(24, 100%, 50%);
   --secondary-color: hsl(0, 100%, 22%);
