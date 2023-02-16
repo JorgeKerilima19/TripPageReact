@@ -8,10 +8,12 @@ export default function About() {
       <HeroImage src={"About"} />
       <div className="first-container main-wrapper">
         <Information
+          id={1}
           title="About"
           content="Since 20012, Sky Travel has been focused on bringing our customers the best in esteem and quality travel game plans. We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side, and giving corporate explorers hello there contact administrations to encourage their business travel needs."
         />
         <Information
+          id={2}
           title="Privacy Policy"
           content={
             <>
@@ -66,14 +68,17 @@ export default function About() {
           }
         />
         <Information
+          id={3}
           title="Cookies"
           content="We employ cookie technology to help visitors and customers move faster through our site. When you sign on to our Web site or take advantage of several key features, we may pass cookies to your computer. A cookie is a string of information that is sent by a Web site and stored on your hard drive or temporarily in your computer’s memory."
         />
         <Information
+          id={4}
           title="Security"
           content="The personally identifiable information we collect about you is stored in limited access servers. We will maintain safeguards to protect the security of these servers and your personally identifiable information."
         />
         <Information
+          id={5}
           title="Terms and Conditions"
           content={
             <>

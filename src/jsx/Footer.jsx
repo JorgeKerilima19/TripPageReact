@@ -43,9 +43,21 @@ export default function Footer() {
 
         <ul className="list-column">
           <h3>About</h3>
-          <li>About us</li>
-          <li>Privacy Policy</li>
-          <li>Terms and COnditions</li>
+          <li>
+            <a href="./about#1">About us</a>
+          </li>
+          <li>
+            <a href="./about#2">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="./about#3">Cookies</a>
+          </li>
+          <li>
+            <a href="./about#4">Security</a>
+          </li>
+          <li>
+            <a href="./about#5">Terms and Conditions</a>
+          </li>
         </ul>
       </footer>
     </>
