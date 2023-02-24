@@ -195,7 +195,7 @@
   display: flex;
   gap: 2em;
   padding: 0.5rem;
-  height: max(35rem, 80vh);
+  height: max(40rem, 80vh);
 }
 .contact__img-container {
   height: 100%;
@@ -212,6 +212,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 1.5em;
+  margin: 0 auto;
 }
 .contact__form-container h2 {
   font-size: max(4.5vw, 2.5em);
@@ -237,7 +238,39 @@
   border-bottom: thin solid var(--secondary-color);
   border-left: thin solid var(--secondary-color);
 }
-
+.input-container__radio-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.input-container__radio-container div{
+  display: flex;
+  gap: 1em;
+}
+.form__input-container-textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form__input-container-textarea textarea{
+  height: 7.5rem;
+  resize: none;
+  border: thin solid var(--secondary-color);
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0.5em;
+  margin-bottom: 0.5rem;
+}
+.form__button{
+  margin: 0 auto;
+  padding: 0.5em;
+  font-size: inherit;
+  width: 50%;
+  border: 0;
+  background-color: var(--primary-color);
+  color: var(--font-color-primary);
+}
 @media (max-width: 800px) {
   .contact__img-container {
     display: none;
