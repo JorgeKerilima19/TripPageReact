@@ -2,7 +2,7 @@ export const NavItems = [
   {
     title: "Home",
     name: "Sky Travel",
-    textDescription: "A New Sky ,A New Life.",
+    textDescription: "A New Sky, A New Life.",
     url: "/",
     className: "svg-holder-image",
     image:
