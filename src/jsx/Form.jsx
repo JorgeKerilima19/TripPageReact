@@ -2,7 +2,10 @@ function Form() {
   return (
     <section className="section__contact">
       <div className="contact__img-container">
-        <img src="contact__img" alt="" />
+        <img
+          src="https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          alt=""
+        />
       </div>
       <div className="contact__form-container">
         <h2>Keep In Touch</h2>
@@ -11,22 +14,41 @@ function Form() {
           nisi?
         </p>
         <form action="">
-            <div className="form__input-container">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Name" />
+          <div className="form__input-container">
+            <label htmlFor="">Name</label>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div className="form__input-container">
+            <label htmlFor="">Last-name</label>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div className="form__input-container">
+            <label htmlFor="">Email</label>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div className="">
+            <div>
+              <input type="radio" name="type" />
+              <label>Suggestions</label>
             </div>
-            <div className="form__input-container">
-                <label htmlFor="">Last-name</label>
-                <input type="text" placeholder="Name" />
+            <div>
+              <input type="radio" name="type" />
+              <label>I have a problem</label>
             </div>
-            <div className="form__input-container">
-                <label htmlFor="">Email</label>
-                <input type="text" placeholder="Name" />
+            <div>
+              <input type="radio" name="type" />
+              <label>Consultation</label>
             </div>
-            <div className="form__input-container">
-                <label htmlFor="">Your message</label>
-                <textarea></textarea>
-            </div>
+          </div>
+          <div className="form__input-container">
+            <label htmlFor="">Your message</label>
+            <textarea></textarea>
+          </div>
+          <div className="">
+            <input type="checkbox" />
+            <label>Accept Terms and conditions</label>
+          </div>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
