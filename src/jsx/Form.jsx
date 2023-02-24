@@ -2,10 +2,6 @@ function Form() {
   return (
     <section className="section__contact">
       <div className="contact__img-container">
-        <img
-          src="https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-          alt=""
-        />
       </div>
       <div className="contact__form-container">
         <h2>Keep In Touch</h2>
@@ -13,7 +9,7 @@ function Form() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
           nisi?
         </p>
-        <form action="">
+        <form action="" className="form-container__form">
           <div className="form__input-container">
             <label htmlFor="">Name</label>
             <input type="text" placeholder="Name" />
