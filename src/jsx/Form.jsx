@@ -11,16 +11,16 @@ function Form() {
         </p>
         <form action="" className="form-container__form">
           <div className="form__input-container">
-            <label htmlFor="">Name</label>
-            <input type="text" placeholder="Name" />
+            <label htmlFor="">Name: </label>
+            <input className="input-container__input" type="text" placeholder="Name" />
           </div>
           <div className="form__input-container">
-            <label htmlFor="">Last-name</label>
-            <input type="text" placeholder="Name" />
+            <label htmlFor="">Last-name: </label>
+            <input className="input-container__input" type="text" placeholder="Name" />
           </div>
           <div className="form__input-container">
-            <label htmlFor="">Email</label>
-            <input type="text" placeholder="Name" />
+            <label htmlFor="">Email: </label>
+            <input className="input-container__input" type="text" placeholder="Name" />
           </div>
           <div className="">
             <div>
