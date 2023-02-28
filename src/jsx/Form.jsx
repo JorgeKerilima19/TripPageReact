@@ -23,6 +23,7 @@ function Form() {
               className="input-container__input"
               type="text"
               placeholder="Last-name"
+              required
             />
           </div>
           <div className="form__input-container">
@@ -31,11 +32,12 @@ function Form() {
               className="input-container__input"
               type="text"
               placeholder="e-mail"
+              required
             />
           </div>
           <div className="input-container__radio-container">
             <div>
-              <input type="radio" name="type" />
+              <input type="radio" name="type" required />
               <label>Suggestions</label>
             </div>
             <div>
@@ -48,14 +50,16 @@ function Form() {
             </div>
           </div>
           <div className="form__input-container-textarea">
-            <label htmlFor="">Your message</label>
-            <textarea></textarea>
+            <label htmlFor="">Your message: </label>
+            <textarea required></textarea>
           </div>
           <div className="">
-            <input type="checkbox" />
+            <input type="checkbox" required />
             <label> Accept Terms and conditions</label>
           </div>
-          <button className="form__button" type="submit">Send Message</button>
+          <button className="form__button" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </section>
