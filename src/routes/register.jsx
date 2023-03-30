@@ -1,5 +1,6 @@
 import HeroImage from "../jsx/HeroImage";
 import Footer from "../jsx/Footer";
+import FormRegister from "../jsx/FormRegister";
 
 export default function Register() {
   return (
@@ -10,7 +11,7 @@ export default function Register() {
         By signing in, you will receive our news letter and special discounts on
         future trip packages
       </h3>
-
+      <FormRegister />
       <Footer />
     </>
   );
