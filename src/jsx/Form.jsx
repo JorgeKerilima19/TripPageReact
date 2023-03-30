@@ -5,8 +5,7 @@ function Form() {
       <div className="contact__form-container">
         <h2>Keep In Touch</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-          nisi?
+          Concerns?, want more information? or just say hello 😄
         </p>
         <form action="" className="form-container__form">
           <div className="form__input-container">

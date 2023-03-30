@@ -59,6 +59,10 @@
   text-align: center;
   font-weight: 700;
 }
+.title__description{
+  margin: 3rem auto;
+  text-align: center;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
