@@ -232,6 +232,7 @@
   display: flex;
   justify-content: space-between;
   min-height: 2em;
+  gap: 0.5rem;
 }
 .input-container__input {
   width: 50%;
