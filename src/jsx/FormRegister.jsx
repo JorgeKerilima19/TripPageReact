@@ -19,17 +19,17 @@ function FormRegister() {
             <input className="input-container__input register__input" type="text" />
             <label htmlFor="">Username</label>
           </div>
-          <div>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="LastName" />
-            <input type="text" placeholder="Country" />
-            <input type="text" placeholder="Phone" />
+          <div className="form__form-details">
+            <input className="form-details" type="text" placeholder="Name" />
+            <input className="form-details" type="text" placeholder="LastName" />
+            <input className="form-details" type="text" placeholder="Country" />
+            <input className="form-details" type="text" placeholder="Phone" />
           </div>
           <div className="">
             <input type="checkbox" required />
             <label> Accept Terms and conditions</label>
           </div>
-          <button type="submit">Register</button>
+          <button className="form__button" type="submit">Register</button>
         </form>
       </section>
     </>
