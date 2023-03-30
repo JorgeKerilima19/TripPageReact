@@ -1,8 +1,18 @@
+.section__description {
+  font-weight: 300;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.4rem;
+}
 .register-form__container {
   display: flex;
   width: 90%;
   gap: 2rem;
   padding: 2rem 0;
+  margin: auto;
 }
 .register-form__img-container {
   height: 30rem;
@@ -39,4 +49,13 @@
   border-bottom: thin solid var(--secondary-color);
   border-left: thin solid var(--secondary-color);
   outline: transparent;
+}
+@media (max-width: 800px) {
+  .register-form__img-container {
+    display: none;
+  }
+  .register-form__form {
+    width: max(80%, 15rem);
+    margin: auto;
+  }
 }

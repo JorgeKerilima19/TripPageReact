@@ -3,7 +3,7 @@ import "../styles/registerForm.css";
 function FormRegister() {
   return (
     <>
-      <h3>Take your experience to the next level</h3>
+      <h3 className="section__description">Take your experience to the next level</h3>
       <section className="register-form__container" action="">
         <div className="register-form__img-container"></div>
         <form className="register-form__form">
