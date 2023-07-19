@@ -4,13 +4,15 @@ import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";
 import Footer from "../jsx/Footer";
 
+import "../index.css";
+
 export default function Home() {
   return (
     <>
       <HeroImage src={"Home"} />
       <h2 className="section-title">Popular Destinations</h2>
-      <div className="first-container">
-        <section className="card-container">
+      <div className="flex flex__column flex__item-center">
+        <section className="container__cards flex__sp-center width__90">
           {data.map((item, index) => {
             return <Destinations key={index} item={item} />;
           })}

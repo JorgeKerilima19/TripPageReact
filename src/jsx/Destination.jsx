@@ -1,15 +1,19 @@
+import "../index.css";
+import "../styles/home.css";
+
 export default function Destinations({ item }) {
   return (
     <>
-      <article className="destination-card">
-        <div className="destination-card_images">
-          <img src={item.src1} alt="Image1" />
-          <img src={item.src2} alt="Image2" />
+      <article className="flex flex__column card__container-md flex__sp-center card">
+        <div className="flex flex__gap-sm flex__sp-center width__full">
+          <img className="destination-card__img" src={item.src1} alt="Image1" />
+          <img className="destination-card__img" src={item.src2} alt="Image2" />
         </div>
-        <div className="destination-card_description">
-          <h3 className="card-title">
+        <h2 className="destination-card__route">{item.title}</h2>
+        <div className="destination-card__description">
+          <h3 className="card__title">
             {item.title},{" "}
-            <small className="card-title_small">{item.popular}</small>
+            <small className="card__subtitle">{item.popular}</small>
           </h3>
           <p className="card-description">{item.description}</p>
           <button className="button-medium">Book</button>

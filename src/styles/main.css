@@ -59,7 +59,7 @@
   text-align: center;
   font-weight: 700;
 }
-.title__description{
+.title__description {
   margin: 3rem auto;
   text-align: center;
 }
@@ -70,67 +70,6 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 0 2em 2em;
-}
-.destination-card {
-  width: 18rem;
-  height: 20rem;
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  border-radius: 2rem;
-  padding: 0 1em 1em;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  overflow: hidden;
-  transition: transform 0.5s, height 0.3s;
-}
-.destination-card_images {
-  height: 17.5rem;
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  align-items: center;
-}
-.destination-card_images img {
-  width: 48%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-.destination-card_description {
-  display: flex;
-  padding-left: 0.5em;
-  flex-direction: column;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-.destination-card:hover {
-  transform: scale(1.1);
-  height: 38rem;
-}
-.destination-card:hover .destination-card_description {
-  opacity: 1;
-}
-.card-title {
-  font-size: 1.2em;
-  margin-right: auto;
-  text-decoration: underline;
-  text-decoration-color: black;
-  text-decoration-thickness: 0.1rem;
-}
-.card-title_small {
-  font-size: 0.85em;
-  font-weight: 500;
-}
-.card-description {
-  margin: 1em 0;
-  line-height: 1.4em;
-}
-.button-medium {
-  font-size: inherit;
-  width: max(50%, 8rem);
-  height: min(6rem, 3em);
-  align-self: center;
 }
 .footer {
   margin: 0 auto;
@@ -249,16 +188,16 @@
   flex-wrap: wrap;
   gap: 1em;
 }
-.input-container__radio-container div{
+.input-container__radio-container div {
   display: flex;
   gap: 1em;
 }
-.form__input-container-textarea{
+.form__input-container-textarea {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-.form__input-container-textarea textarea{
+.form__input-container-textarea textarea {
   height: 7.5rem;
   resize: none;
   border: thin solid var(--secondary-color);
@@ -267,7 +206,7 @@
   padding: 0.5em;
   margin-bottom: 0.5rem;
 }
-.form__button{
+.form__button {
   margin: 0 auto;
   padding: 0.5em;
   font-size: inherit;

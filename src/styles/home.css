@@ -1,0 +1,37 @@
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.destination-card__route {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+.destination-card__img {
+  width: 45%;
+  height: 15rem;
+  object-fit: cover;
+}
+.destination-card__description {
+  background-color: var(--container-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 200;
+}
+.card:hover .destination-card__description {
+  display: block;
+  visibility: visible;
+  top: 0%;
+  opacity: 1;
+}
