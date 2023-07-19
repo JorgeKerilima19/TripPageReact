@@ -2,7 +2,9 @@ html {
   font-size: clamp(100%, 110%, 120%);
   font-family: "Raleway", sans-serif;
 }
-* {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
