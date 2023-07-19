@@ -10,13 +10,13 @@ export default function Destinations({ item }) {
           <img className="destination-card__img" src={item.src2} alt="Image2" />
         </div>
         <h2 className="destination-card__route">{item.title}</h2>
-        <div className="destination-card__description">
+        <div className="destination-card__description flex__column flex__sp-center flex__gap-md">
           <h3 className="card__title">
             {item.title},{" "}
             <small className="card__subtitle">{item.popular}</small>
           </h3>
-          <p className="card-description">{item.description}</p>
-          <button className="button-medium">Book</button>
+          <p>{item.description}</p>
+          <button className="card__button-full center">More Info</button>
         </div>
       </article>
     </>

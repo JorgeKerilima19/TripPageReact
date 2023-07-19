@@ -8,13 +8,13 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: thin solid red;
 }
 body {
   background-color: var(--bg-color);
   font-size: 100%;
 }
-a {
+a,
+button {
   font-size: inherit;
   color: inherit;
 }
@@ -52,6 +52,15 @@ a {
   flex-wrap: wrap;
   gap: 3rem;
 }
+.card__button-full {
+  width: 90%;
+  background-color: var(--primary-color);
+  border: 0;
+  padding: 0.5rem;
+  color: var(--font-color-primary);
+  font-size: 1.1em;
+  font-weight: 600;
+}
 .card__container-sm {
   width: min(90%, 5rem);
   padding: 0.8rem;
@@ -80,6 +89,9 @@ a {
 .card__subtitle {
   font-size: 1.1rem;
   font-weight: 600;
+}
+.center{
+  margin: auto;
 }
 .flex {
   display: flex;
