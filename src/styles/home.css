@@ -3,13 +3,34 @@
   overflow: hidden;
 }
 .destination-card__route {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   width: 100%;
   left: 0;
   position: absolute;
   text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(
+    rgba(129, 81, 81, 0.199),
+    rgba(109, 95, 95, 0.788)
+  );
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.726);
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-background-clip: text;
+  backdrop-filter: blur(0.1rem);
+}
+.Argentina {
+  background-color: rgb(76, 228, 255);
+}
+.Brasil {
+  background-color: rgba(70, 189, 46, 0.938);
+}
+.Colombia {
+  background-color: rgb(251, 255, 26);
+}
+.Peru {
+  background-color: rgb(255, 0, 0);
 }
 .destination-card__img {
   width: 45%;

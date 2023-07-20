@@ -9,7 +9,9 @@ export default function Destinations({ item }) {
           <img className="destination-card__img" src={item.src1} alt="Image1" />
           <img className="destination-card__img" src={item.src2} alt="Image2" />
         </div>
-        <h2 className="destination-card__route">{item.title}</h2>
+        <h2 className={`destination-card__route ${item.title}`}>
+          {item.title}
+        </h2>
         <div className="destination-card__description flex__column flex__sp-center flex__gap-md">
           <h3 className="card__title">
             {item.title},{" "}
