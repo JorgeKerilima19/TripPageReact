@@ -18,6 +18,10 @@ button {
   font-size: inherit;
   color: inherit;
 }
+button {
+  outline: transparent;
+  border: 0;
+}
 :root {
   --header-height: 4rem;
   --bg-color: hsl(36, 100%, 99%);
@@ -44,6 +48,13 @@ button {
   flex-direction: column;
   max-width: var(--max-width);
   margin: auto;
+}
+.button__big {
+  width: max(50%, 15rem);
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: var(--font-color-primary);
 }
 .container__cards {
   min-height: 2rem;
@@ -90,7 +101,7 @@ button {
   font-size: 1.1rem;
   font-weight: 600;
 }
-.center{
+.center {
   margin: auto;
 }
 .flex {
