@@ -6,7 +6,7 @@ import Footer from "../jsx/Footer";
 
 import "../index.css";
 
-export default function Home() {
+export function Home() {
   return (
     <>
       <HeroImage src={"Home"} />

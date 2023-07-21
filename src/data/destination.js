@@ -1,5 +1,6 @@
 export const Destinations = [
   {
+    id: "peru",
     title: "Peru",
     popular: "Machupicchu",
     description:
@@ -8,6 +9,7 @@ export const Destinations = [
     src2: "https://images.unsplash.com/photo-1415804941191-bc0c3bbac10d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
   },
   {
+    id: "colombia",
     title: "Colombia",
     popular: "Cartagena",
     description:
@@ -16,6 +18,7 @@ export const Destinations = [
     src2: "https://images.unsplash.com/photo-1633627397446-04c7fca71c74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
   },
   {
+    id: "brasil",
     title: "Brasil",
     popular: "Rio de Janeiro",
     description:
@@ -24,6 +27,7 @@ export const Destinations = [
     src2: "https://images.unsplash.com/photo-1655642272518-05aaf7b8726e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80",
   },
   {
+    id: "argentina",
     title: "Argentina",
     popular: "Buenos Aires",
     description:

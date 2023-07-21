@@ -2,7 +2,7 @@ import HeroImage from "../jsx/HeroImage";
 import Footer from "../jsx/Footer";
 import Information from "../jsx/Info";
 
-export default function About() {
+export function About() {
   return (
     <>
       <HeroImage src={"About"} />

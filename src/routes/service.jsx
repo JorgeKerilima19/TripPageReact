@@ -4,7 +4,7 @@ import Destinations from "../jsx/Destination";
 
 import { Destinations as data } from "../data/destination";
 
-export default function Services() {
+export function Services() {
   return (
     <>
       <HeroImage src={"Service"} />

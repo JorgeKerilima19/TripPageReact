@@ -2,7 +2,7 @@ import HeroImage from "../jsx/HeroImage";
 import Footer from "../jsx/Footer";
 import FormRegister from "../jsx/FormRegister";
 
-export default function Register() {
+export function Register() {
   return (
     <>
       <HeroImage src={"Register"} />
