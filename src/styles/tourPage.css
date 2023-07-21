@@ -1,0 +1,14 @@
+.banner {
+  height: min(100vh, 25rem);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  background-position-x: 50%;
+  position: relative;
+  color: white;
+}
+.subNavbar {
+  bottom: 0;
+  left: 1rem;
+}

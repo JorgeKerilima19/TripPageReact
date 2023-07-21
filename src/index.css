@@ -17,6 +17,7 @@ a,
 button {
   font-size: inherit;
   color: inherit;
+  text-decoration: none;
 }
 button {
   outline: transparent;
@@ -30,6 +31,7 @@ button {
   --secondary-color: hsl(0, 100%, 22%);
   --tertiary-color: hsl(171, 100%, 16%);
   --font-color-primary: hsl(0, 0%, 93%);
+  --font-color-secondary: hsl(0, 0%, 0%);
   --max-width: 88rem;
 }
 .svg-holder-image {
@@ -142,11 +144,39 @@ button {
   flex-direction: column;
   gap: 2em;
 }
+.flex__list {
+  display: flex;
+  list-style: none;
+}
+.flex__container-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .flex__wrap {
   flex-wrap: wrap;
 }
+.font__wg-600{
+  font-weight: 600;
+}
+.list__item-square {
+  width: 6rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--font-color-secondary);
+  border-right: thin solid var(--tertiary-color);
+  padding: 0.3rem;
+  text-align: center;
+}
 .ps__relative {
   position: relative;
+}
+.ps__absolute {
+  position: absolute;
 }
 .pd-left__md {
   padding-left: 1rem;
