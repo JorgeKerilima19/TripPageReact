@@ -2,7 +2,7 @@ import HeroImage from "../jsx/HeroImage";
 import Footer from "../jsx/Footer";
 import Destinations from "../jsx/Destination";
 
-import { Destinations as data } from "../data/destination";
+import { Destinations as data } from "../../resources/api/destination.js";
 
 export function Services() {
   return (

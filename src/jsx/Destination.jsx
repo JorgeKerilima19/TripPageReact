@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 import "../index.css";
 import "../styles/home.css";
 
 export default function Destinations({ item }) {
   return (
     <>
-      <article className="flex flex__column card__container-md flex__sp-center card">
+      <Link
+        to={`/service/${item.id}`}
+        className="flex flex__column card__container-md flex__sp-center card"
+      >
         <div className="flex flex__gap-sm flex__sp-center width__full">
           <img className="destination-card__img" src={item.src1} alt="Image1" />
           <img className="destination-card__img" src={item.src2} alt="Image2" />
@@ -20,7 +24,7 @@ export default function Destinations({ item }) {
           <p>{item.description}</p>
           <button className="card__button-full center">More Info</button>
         </div>
-      </article>
+      </Link>
     </>
   );
 }

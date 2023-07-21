@@ -1,4 +1,5 @@
-import { NavItems as data } from "../data/navbarItems";
+import {Destinations as data} from "../../resources/api/destination";
+
 import "../styles/main.css";
 
 export default function HeroImage({ src }) {
