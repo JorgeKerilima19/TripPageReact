@@ -2,5 +2,27 @@
   "id": "brasil",
   "name": "Brasil",
   "banner": "https://plus.unsplash.com/premium_photo-1679689962301-adfa3c77d624?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-  "slogan": "A living country"
+  "slogan": "A living country",
+  "places": [
+    {
+      "placeId": 1,
+      "name": "Rio de Janeiro",
+      "banner": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "placeId": 2,
+      "name": "Iguazu Falls",
+      "banner": "https://images.unsplash.com/photo-1590246185449-e9e2ddd683bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80"
+    },
+    {
+      "placeId": 3,
+      "name": "Chapada Diamantina",
+      "banner": "https://images.unsplash.com/photo-1591232635364-707e5827d09f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "placeId": 4,
+      "name": "Carnival in Brazil",
+      "banner": "https://images.unsplash.com/photo-1659700547307-6db624dc0cb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=550&q=80"
+    }
+  ]
 }

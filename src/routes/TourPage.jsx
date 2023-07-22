@@ -1,21 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
 import { Outlet, useParams } from "react-router-dom";
 
 import "../styles/tourPage.css";
 import SubNavbar from "../jsx/SubNavbar";
+import { TourContext } from "../context/tourContext";
 
 export function TourPage() {
-  const [destination, setDestination] = useState("");
+  const { getData, destination, setDestination } = useContext(TourContext);
   const { id } = useParams();
-
-  const getData = async (destination) => {
-    const res = await fetch(
-      `../../resources/api/dataDetails/${destination}.json`
-    );
-    const data = await res.json();
-
-    return data;
-  };
 
   useEffect(() => {
     const fetchData = async () => {

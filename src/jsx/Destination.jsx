@@ -10,8 +10,32 @@ export default function Destinations({ item }) {
         className="flex flex__column card__container-md flex__sp-center card"
       >
         <div className="flex flex__gap-sm flex__sp-center width__full">
-          <img className="destination-card__img" src={item.src1} alt="Image1" />
-          <img className="destination-card__img" src={item.src2} alt="Image2" />
+          <>
+            {item.src1 ? (
+              <>
+                <img
+                  className="destination-card__img"
+                  src={item.src1}
+                  alt="Image1"
+                />
+                <img
+                  className="destination-card__img"
+                  src={item.src2}
+                  alt="Image2"
+                />
+              </>
+            ) : (
+              <>
+                {
+                  <img
+                    className="destination-card__img"
+                    src={item.banner}
+                    alt="Image2"
+                  />
+                }
+              </>
+            )}
+          </>
         </div>
         <h2 className={`destination-card__route ${item.title}`}>
           {item.title}
