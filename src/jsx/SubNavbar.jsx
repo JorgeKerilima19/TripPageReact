@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const tripNavbarItems = [
   {
     id: "Information",
-    route: "./information",
+    route: "./",
   },
   {
     id: "Places to be",

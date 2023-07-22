@@ -1,5 +1,4 @@
 import HeroImage from "../jsx/HeroImage";
-import Footer from "../jsx/Footer";
 import Information from "../jsx/Info";
 
 export function About() {
@@ -115,7 +114,6 @@ export function About() {
           }
         />
       </div>
-      <Footer />
     </>
   );
 }

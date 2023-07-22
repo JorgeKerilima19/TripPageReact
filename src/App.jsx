@@ -8,8 +8,6 @@ import Navbar from "./jsx/Navbar";
 import { TourContext } from "./context/tourContext";
 
 const App = () => {
-  const { destination } = useContext(TourContext);
-
   return (
     <>
       <Routes>
@@ -19,11 +17,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Services />} />
           <Route path="/service/:id" element={<TourPage />}>
-            <Route
-              path="places"
-              element={<Places destination={destination} />}
-            />
-            <Route path="information" element={<Information />} />
+            <Route index element={<Information />} />
+            <Route path="places" element={<Places />} />
           </Route>
           <Route path="/register" element={<Register />} />
         </Route>

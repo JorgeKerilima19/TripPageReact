@@ -1,5 +1,4 @@
 import HeroImage from "../jsx/HeroImage";
-import Footer from "../jsx/Footer";
 import Form from "../jsx/Form";
 
 export function Contact() {
@@ -7,7 +6,6 @@ export function Contact() {
     <>
       <HeroImage src="Contact" />
       <Form />
-      <Footer />
     </>
   );
 }

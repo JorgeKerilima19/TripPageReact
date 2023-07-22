@@ -1,10 +1,15 @@
-import Destinations from "../../jsx/Destination";
+import { useContext } from "react";
 
-export const Places = ({ destination }) => {
-  console.log(destination);
+import { TourContext } from "../../context/tourContext";
+import TourCard from "../../jsx/TourCard";
+
+export const Places = () => {
+  const { destination } = useContext(TourContext);
   return (
-    <section className="card__container-md">
-      <Destinations item={destination} />
+    <section className="container__cards flex__sp-center">
+      {destination?.places?.map((tour) => (
+        <TourCard key={tour.placeId} tour={tour} />
+      ))}
     </section>
   );
 };

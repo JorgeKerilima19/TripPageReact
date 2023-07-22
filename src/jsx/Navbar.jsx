@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import img from "../assets/socialLogo.svg";
 import HamburgerMenu from "../jsx/HamburgerMenu";
+import Footer from "../jsx/Footer";
 
 export const NavItems = [
   {
@@ -85,6 +86,7 @@ export default function Navbar() {
       <main className="main__column">
         <Outlet></Outlet>
       </main>
+      <Footer />
     </>
   );
 }

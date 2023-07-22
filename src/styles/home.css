@@ -33,7 +33,6 @@
   background-color: rgb(255, 0, 0);
 }
 .destination-card__img {
-  width: 45%;
   height: 18rem;
   object-fit: cover;
 }

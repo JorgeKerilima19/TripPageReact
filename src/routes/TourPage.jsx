@@ -23,7 +23,7 @@ export function TourPage() {
   }, []);
 
   return (
-    <section className="flex__container">
+    <section className="flex__container flex__item-center">
       <div
         className="banner flex__container-center flex__gap-md"
         style={{ backgroundImage: `url(${destination.banner})` }}

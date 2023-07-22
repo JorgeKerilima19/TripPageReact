@@ -2,7 +2,6 @@ import { Destinations as data } from "../../resources/api/destination";
 
 import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";
-import Footer from "../jsx/Footer";
 
 import "../index.css";
 
@@ -18,7 +17,6 @@ export function Home() {
           })}
         </section>
       </div>
-      <Footer />
     </>
   );
 }

@@ -157,7 +157,7 @@ button {
 .flex__wrap {
   flex-wrap: wrap;
 }
-.font__wg-600{
+.font__wg-600 {
   font-weight: 600;
 }
 .list__item-square {
@@ -192,6 +192,9 @@ button {
 }
 .width__90 {
   width: 90%;
+}
+.width__45 {
+  width: 45%;
 }
 .width__md {
   width: 50%;
