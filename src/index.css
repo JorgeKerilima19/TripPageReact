@@ -187,11 +187,27 @@ button {
 .pd-sm {
   padding: 0.5rem;
 }
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.section__content {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
 .width__full {
   width: 100%;
 }
 .width__90 {
   width: 90%;
+}
+.width__60 {
+  width: 60%;
 }
 .width__45 {
   width: 45%;
