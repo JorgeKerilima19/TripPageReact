@@ -55,3 +55,8 @@
   top: 0%;
   opacity: 1;
 }
+.card__price{
+  color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
