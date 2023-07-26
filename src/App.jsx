@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/service/:id" element={<TourPage />}>
             <Route index element={<Information />} />
             <Route path="places" element={<Places />} />
-            <Route path="places/:tourId" element={<PlaceTour />} />
+            <Route path="places/:placeId" element={<PlaceTour />} />
           </Route>
           <Route path="/register" element={<Register />} />
         </Route>

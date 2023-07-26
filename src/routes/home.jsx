@@ -1,4 +1,4 @@
-import { Destinations as data } from "../../resources/api/destination";
+import { Destinations as data } from "../helpers/data/destination";
 
 import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";

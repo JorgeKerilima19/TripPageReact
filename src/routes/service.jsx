@@ -1,7 +1,7 @@
 import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";
 
-import { Destinations as data } from "../../resources/api/destination.js";
+import { Destinations as data } from "../helpers/data/destination"
 
 export function Services() {
   return (
