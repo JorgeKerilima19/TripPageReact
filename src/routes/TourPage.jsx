@@ -20,7 +20,7 @@ export function TourPage() {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
 
   return (
     <section className="flex__container flex__item-center">

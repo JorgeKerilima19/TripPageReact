@@ -1,11 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { useContext } from "react";
 
 import { Home, About, Contact, Register, Services, TourPage } from "./routes";
-import { Places, Information } from "./routes/subRoutes";
+import { Places, Information, PlaceTour } from "./routes/subRoutes";
 
 import Navbar from "./jsx/Navbar";
-import { TourContext } from "./context/tourContext";
 
 const App = () => {
   return (
@@ -19,6 +17,7 @@ const App = () => {
           <Route path="/service/:id" element={<TourPage />}>
             <Route index element={<Information />} />
             <Route path="places" element={<Places />} />
+            <Route path="places/:tourId" element={<PlaceTour />} />
           </Route>
           <Route path="/register" element={<Register />} />
         </Route>

@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const TourContextProvider = ({ children }) => {
   const [destination, setDestination] = useState("");
+  const [tour, setTour] = useState("");
 
   const getData = async (destination) => {
     const res = await fetch(
@@ -14,7 +15,9 @@ const TourContextProvider = ({ children }) => {
   };
 
   return (
-    <TourContext.Provider value={{ getData, destination, setDestination }}>
+    <TourContext.Provider
+      value={{ getData, destination, setDestination, tour, setTour }}
+    >
       {children}
     </TourContext.Provider>
   );
