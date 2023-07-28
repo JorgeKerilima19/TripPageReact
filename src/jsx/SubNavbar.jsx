@@ -2,11 +2,23 @@ import { NavLink } from "react-router-dom";
 const tripNavbarItems = [
   {
     id: "Information",
-    route: "./",
+    route: "",
   },
   {
-    id: "Places to be",
-    route: "./places",
+    id: "Tour Plan",
+    route: "./tourPlan",
+  },
+  {
+    id: "Location",
+    route: "./location",
+  },
+  {
+    id: "Gallery",
+    route: "./gallery",
+  },
+  {
+    id: "Reviews",
+    route: "./reviews",
   },
 ];
 
@@ -16,7 +28,12 @@ const SubNavbar = () => {
       <ul className="flex__list">
         {tripNavbarItems.map((el) => (
           <li className="list__item-square font__wg-600" key={el.id}>
-            <NavLink to={`${el.route}`}>{el.id}</NavLink>
+            <NavLink
+              to={`${el.route}`}
+              activeclassname="list__item-square__active"
+            >
+              {el.id}
+            </NavLink>
           </li>
         ))}
       </ul>

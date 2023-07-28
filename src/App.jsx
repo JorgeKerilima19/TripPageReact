@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import { Home, About, Contact, Register, Services, TourPage } from "./routes";
-import { Places, Information, PlaceTour } from "./routes/subRoutes";
+import { Information, PlaceTour } from "./routes/subRoutes";
 
 import Navbar from "./jsx/Navbar";
 
@@ -16,8 +16,12 @@ const App = () => {
           <Route path="/service" element={<Services />} />
           <Route path="/service/:id" element={<TourPage />}>
             <Route index element={<Information />} />
-            <Route path="places" element={<Places />} />
-            <Route path="places/:placeId" element={<PlaceTour />} />
+            <Route path=":placeId" element={<PlaceTour />}>
+              <Route path="tourPlan" element={<div>Hello</div>} />
+              <Route path="location" element={<div>Hello</div>} />
+              <Route path="gallery" element={<div>Hello</div>} />
+              <Route path="reviews" element={<div>Hello</div>} />
+            </Route>
           </Route>
           <Route path="/register" element={<Register />} />
         </Route>

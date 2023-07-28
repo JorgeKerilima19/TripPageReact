@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { TourContext } from "../../context/tourContext";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
+import SubNavbar from "../../jsx/SubNavbar";
 
 export const PlaceTour = () => {
   const [tour, setTour] = useState("");
@@ -16,8 +17,15 @@ export const PlaceTour = () => {
   }, []);
 
   return (
-    <div className="banner__md flex__container-center" style={{ backgroundImage: `url(${tour.banner})` }}>
-      PlaceTour {tour.name}
-    </div>
+    <>
+      <div
+        className="banner__md flex__container-center"
+        style={{ backgroundImage: `url(${tour.banner})` }}
+      >
+        <h2>PlaceTour {tour.name}</h2>
+        <SubNavbar />
+      </div>
+      <Outlet />
+    </>
   );
 };

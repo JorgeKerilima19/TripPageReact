@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { TourContext } from "../../context/tourContext";
+import { Places } from "../../jsx/Places";
 
 export const Information = () => {
   const { destination } = useContext(TourContext);
@@ -11,6 +12,7 @@ export const Information = () => {
         <p className="section__content tour__description  ">
           {destination.about}
         </p>
+        <Places />
         <div>About our tours to be</div>
         <div>Popular tours</div>
         <div>About our guides</div>

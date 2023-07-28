@@ -2,7 +2,6 @@ import { useEffect, useContext } from "react";
 import { Outlet, useParams } from "react-router-dom";
 
 import "../styles/tourPage.css";
-import SubNavbar from "../jsx/SubNavbar";
 import { TourContext } from "../context/tourContext";
 
 export function TourPage() {
@@ -30,7 +29,6 @@ export function TourPage() {
       >
         <h2>{destination.name}</h2>
         <span>{destination.slogan}</span>
-        <SubNavbar />
       </div>
       <Outlet />
     </section>
