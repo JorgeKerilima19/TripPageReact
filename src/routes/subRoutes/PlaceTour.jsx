@@ -10,11 +10,14 @@ export const PlaceTour = () => {
   useEffect(() => {
     const getTourInfo = async () => {
       const data = await getData(id);
-      setTour(data.places[placeId-1]);
-      console.log(tour);
+      setTour(data.places[placeId - 1]);
     };
     getTourInfo();
   }, []);
 
-  return <div>PlaceTour {tour.name}</div>;
+  return (
+    <div className="banner__md flex__container-center" style={{ backgroundImage: `url(${tour.banner})` }}>
+      PlaceTour {tour.name}
+    </div>
+  );
 };

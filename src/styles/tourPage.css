@@ -1,5 +1,6 @@
-.banner {
-  height: min(100vh, 25rem);
+.banner,
+.banner__md {
+  height: min(100vh, 22rem);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,11 +8,15 @@
   position: relative;
   color: white;
 }
+.banner__md{
+  width: 80%;
+  height: 18rem;
+}
 .subNavbar {
   bottom: 0;
   left: 1rem;
 }
-.tour__description{
+.tour__description {
   line-height: 1.8rem;
   text-align: center;
   letter-spacing: 0.05rem;
