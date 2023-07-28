@@ -8,7 +8,7 @@
   position: relative;
   color: white;
 }
-.banner__md{
+.banner__md {
   width: 80%;
   height: 18rem;
 }
@@ -20,4 +20,26 @@
   line-height: 1.8rem;
   text-align: center;
   letter-spacing: 0.05rem;
+}
+.active {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  bottom: 0;
+  color: var(--font-color-primary);
+}
+a.active {
+  animation: navLink 0.5s forwards;
+}
+@keyframes navLink {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 5rem;
+    border-top-left-radius: 0.5rem;
+  }
 }

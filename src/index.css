@@ -172,10 +172,6 @@ button {
   padding: 0.3rem;
   text-align: center;
 }
-.list__item-square__active {
-  position: relative;
-  height: 4rem;
-}
 .ps__relative {
   position: relative;
 }

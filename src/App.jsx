@@ -17,6 +17,7 @@ const App = () => {
           <Route path="/service/:id" element={<TourPage />}>
             <Route index element={<Information />} />
             <Route path=":placeId" element={<PlaceTour />}>
+              <Route index path="" element={<div>Index</div>} />
               <Route path="tourPlan" element={<div>Hello</div>} />
               <Route path="location" element={<div>Hello</div>} />
               <Route path="gallery" element={<div>Hello</div>} />

@@ -27,11 +27,11 @@ const SubNavbar = () => {
     <nav className="ps__absolute subNavbar">
       <ul className="flex__list">
         {tripNavbarItems.map((el) => (
-          <li className="list__item-square font__wg-600" key={el.id}>
-            <NavLink
-              to={`${el.route}`}
-              activeclassname="list__item-square__active"
-            >
+          <li
+            className="list__item-square font__wg-600 ps__relative"
+            key={el.id}
+          >
+            <NavLink end to={`${el.route}`}>
               {el.id}
             </NavLink>
           </li>
