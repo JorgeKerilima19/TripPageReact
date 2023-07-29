@@ -34,6 +34,19 @@
 a.active {
   animation: navLink 0.5s forwards;
 }
+.tour-info__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-top: 0.15rem solid hsla(170, 100%, 16%, 0.164);
+  border-bottom: 0.15rem solid hsla(170, 100%, 16%, 0.164);
+}
+.tour-info__item > * {
+  width: max(45%, 14rem);
+}
 @keyframes navLink {
   from {
     height: 100%;

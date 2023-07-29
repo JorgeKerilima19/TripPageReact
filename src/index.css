@@ -139,6 +139,9 @@ button {
 .flex__item-center {
   align-items: center;
 }
+.flex__item-end {
+  align-items: flex-end;
+}
 .flex__container {
   display: flex;
   flex-direction: column;
@@ -205,6 +208,9 @@ button {
 }
 .width__90 {
   width: 90%;
+}
+.width__80 {
+  width: 80%;
 }
 .width__60 {
   width: 60%;

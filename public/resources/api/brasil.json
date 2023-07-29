@@ -13,11 +13,12 @@
       "discount": true,
       "discountAmount": 30,
       "about": "Mauris fermentum suscipit auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat tortor sapien, sit amet faucibus orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.",
+      "ageLimit": "No age limit",
       "tourInfo": {
         "Destination": "Rio de Janeiro City Tour",
         "Departure": "Your Hotel",
         "Departure Time": "10:30 am",
-        "Return Time": "6:30 pm",
+        "Return Time": "Approximately 6:30 pm",
         "Dress Code Time": "No dress Code",
         "Included": {
           "Vehicle": true,

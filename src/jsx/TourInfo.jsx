@@ -5,8 +5,8 @@ const TourInfo = () => {
   const { tour, tourEntries } = useContext(TourContext);
 
   return (
-    <section>
-      <div>
+    <section className="flex flex__column flex__item-center flex__gap-bg width__80">
+      <div className="flex flex__column flex__gap-md">
         <h2>
           {tour.name}
           <span> {tour.pricePerPerson}</span>
@@ -14,10 +14,10 @@ const TourInfo = () => {
         </h2>
         <p>{tour.about}</p>
       </div>
-      <div>
+      <ul className="flex flex__column width__full flex__gap-md">
         {Object.entries(tourEntries).map(([key, value], index) => {
           return (
-            <div key={index}>
+            <li key={index} className="tour-info__item">
               <h3>{key}</h3>
               {typeof value === "object" ? (
                 <span>
@@ -28,12 +28,14 @@ const TourInfo = () => {
                   ))}
                 </span>
               ) : (
-                <span>{value}</span>
+                <div>
+                  <span>{value}</span>
+                </div>
               )}
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
       <div>Photos</div>
     </section>
   );
