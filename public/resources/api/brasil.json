@@ -20,7 +20,7 @@
         "Departure Time": "10:30 am",
         "Return Time": "Approximately 6:30 pm",
         "Dress Code Time": "No dress Code",
-        "Included": {
+        "Included?": {
           "Vehicle": true,
           "Personal Guide": true,
           "Breakfast": false,
@@ -28,7 +28,12 @@
           "Dinner": false,
           "tickets": false
         }
-      }
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1544989164-31dc3c645987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+        "https://images.unsplash.com/photo-1626568941852-70bc179e493e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "https://images.unsplash.com/photo-1564659907532-6b5f98c8e70f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=437&q=80"
+      ]
     },
     {
       "placeId": 2,

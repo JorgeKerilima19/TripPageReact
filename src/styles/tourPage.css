@@ -34,13 +34,16 @@
 a.active {
   animation: navLink 0.5s forwards;
 }
+.tour__price{
+  font-size:1.1rem;
+}
 .tour-info__item {
   list-style: none;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   border-top: 0.15rem solid hsla(170, 100%, 16%, 0.164);
   border-bottom: 0.15rem solid hsla(170, 100%, 16%, 0.164);
 }
@@ -50,6 +53,11 @@ a.active {
 .tour-info__body{
   line-height: 1.8rem;
   word-spacing: 0.2rem;
+}
+.tour__photo{
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
 }
 @keyframes navLink {
   from {
