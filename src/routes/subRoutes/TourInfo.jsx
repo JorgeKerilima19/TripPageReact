@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { TourContext } from "../context/tourContext";
+import { TourContext } from "../../context/tourContext";
 
-const TourInfo = () => {
+export const TourInfo = () => {
   const { tour, tourEntries } = useContext(TourContext);
 
   return (
@@ -61,5 +61,3 @@ const TourInfo = () => {
     </section>
   );
 };
-
-export default TourInfo;

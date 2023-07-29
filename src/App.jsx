@@ -1,10 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
 import { Home, About, Contact, Register, Services, TourPage } from "./routes";
-import { Information, PlaceTour } from "./routes/subRoutes";
+import { Information, PlaceTour, TourInfo, TourPlan } from "./routes/subRoutes";
 
 import Navbar from "./jsx/Navbar";
-import TourInfo from "./jsx/TourInfo";
 
 const App = () => {
   return (
@@ -19,7 +18,7 @@ const App = () => {
             <Route index element={<Information />} />
             <Route path=":placeId" element={<PlaceTour />}>
               <Route index path="" element={<TourInfo />} />
-              <Route path="tourPlan" element={<div>Hello</div>} />
+              <Route path="tourPlan" element={<TourPlan />} />
               <Route path="location" element={<div>Hello</div>} />
               <Route path="gallery" element={<div>Hello</div>} />
               <Route path="reviews" element={<div>Hello</div>} />

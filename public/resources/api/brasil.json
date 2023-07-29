@@ -33,6 +33,34 @@
         "https://images.unsplash.com/photo-1544989164-31dc3c645987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
         "https://images.unsplash.com/photo-1626568941852-70bc179e493e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
         "https://images.unsplash.com/photo-1564659907532-6b5f98c8e70f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=437&q=80"
+      ],
+      "tourPlan": [
+        {
+          "Day 1": "Departure",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 2": "Exploring the city",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 3": "Return",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        }
       ]
     },
     {

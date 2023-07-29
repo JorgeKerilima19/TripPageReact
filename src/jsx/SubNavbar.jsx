@@ -31,7 +31,7 @@ const SubNavbar = () => {
             className="list__item-square font__wg-600 ps__relative"
             key={el.id}
           >
-            <NavLink end to={`${el.route}`}>
+            <NavLink className="a" end to={`${el.route}`}>
               {el.id}
             </NavLink>
           </li>
