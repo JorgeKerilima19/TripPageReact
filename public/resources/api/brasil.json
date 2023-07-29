@@ -11,7 +11,23 @@
       "banner": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "pricePerPerson": 600,
       "discount": true,
-      "discountAmount": 30
+      "discountAmount": 30,
+      "about": "Mauris fermentum suscipit auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat tortor sapien, sit amet faucibus orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.",
+      "tourInfo": {
+        "Destination": "Rio de Janeiro City Tour",
+        "Departure": "Your Hotel",
+        "Departure Time": "10:30 am",
+        "Return Time": "6:30 pm",
+        "Dress Code Time": "No dress Code",
+        "Included": {
+          "Vehicle": true,
+          "Personal Guide": true,
+          "Breakfast": false,
+          "Lunch": true,
+          "Dinner": false,
+          "tickets": false
+        }
+      }
     },
     {
       "placeId": 2,
