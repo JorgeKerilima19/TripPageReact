@@ -1,6 +1,6 @@
 html {
   font-size: clamp(100%, 110%, 120%);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 *,
 ::after,

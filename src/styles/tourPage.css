@@ -47,6 +47,10 @@ a.active {
 .tour-info__item > * {
   width: max(45%, 14rem);
 }
+.tour-info__body{
+  line-height: 1.8rem;
+  word-spacing: 0.2rem;
+}
 @keyframes navLink {
   from {
     height: 100%;

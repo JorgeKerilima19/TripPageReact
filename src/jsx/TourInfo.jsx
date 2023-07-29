@@ -12,7 +12,7 @@ const TourInfo = () => {
           <span> {tour.pricePerPerson}</span>
           <span>/per Person</span>
         </h2>
-        <p>{tour.about}</p>
+        <p className="tour-info__body">{tour.about}</p>
       </div>
       <ul className="flex flex__column width__full flex__gap-md">
         {Object.entries(tourEntries).map(([key, value], index) => {
