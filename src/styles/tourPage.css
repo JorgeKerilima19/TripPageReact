@@ -61,6 +61,11 @@
   line-height: 1.8rem;
   word-spacing: 0.2rem;
 }
+.tour-info__body-sm {
+  margin-left: 3rem;
+  line-height: 1.5rem;
+  word-spacing: 0.15rem;
+}
 .tour__photo {
   height: 15rem;
   width: 15rem;
