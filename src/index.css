@@ -193,6 +193,9 @@ button {
 .pd-left__md {
   padding-left: 1rem;
 }
+.pd-bg {
+  padding: 2rem;
+}
 .pd-md {
   padding: 1rem;
 }
