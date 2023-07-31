@@ -196,6 +196,9 @@ button {
 .pd-top__bg {
   padding-top: 2rem;
 }
+.pd-bottom__bg {
+  padding-bottom: 2rem;
+}
 .pd-bg {
   padding: 2rem;
 }
