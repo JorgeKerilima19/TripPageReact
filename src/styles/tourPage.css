@@ -91,6 +91,10 @@
   height: 80%;
   border-left-style: dotted;
 }
+.tour__map{
+  width: 100%;
+  height: 40rem;
+}
 @keyframes navLink {
   from {
     height: 100%;
