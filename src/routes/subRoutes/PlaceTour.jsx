@@ -25,7 +25,9 @@ export const PlaceTour = () => {
         <h2>{tour.name}</h2>
         <SubNavbar />
       </div>
-      <Outlet />
+      <section className="section__container flex__gap-bg width__80 mg-both__bg">
+        <Outlet />
+      </section>
     </>
   );
 };

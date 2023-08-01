@@ -184,6 +184,16 @@ button {
   padding: 0.3rem;
   text-align: center;
 }
+.mg-both__bg {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.mg-top__bg {
+  margin-top: 5rem;
+}
+.mg-bottom__bg {
+  margin-bottom: 5rem;
+}
 .ps__relative {
   position: relative;
 }

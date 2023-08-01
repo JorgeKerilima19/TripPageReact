@@ -5,7 +5,7 @@ export const TourInfo = () => {
   const { tour, tourEntries } = useContext(TourContext);
 
   return (
-    <section className="flex flex__column flex__item-center flex__gap-bg width__80 pd-top__bg">
+    <>
       <div className="flex flex__column flex__gap-md">
         <h2 className="section__title color__primary">
           {tour.name}
@@ -58,6 +58,6 @@ export const TourInfo = () => {
           <img className="tour__photo" key={el} src={el} />
         ))}
       </div>
-    </section>
+    </>
   );
 };

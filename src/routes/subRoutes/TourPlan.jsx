@@ -5,7 +5,7 @@ export const TourPlan = () => {
   const { tour } = useContext(TourContext);
 
   return (
-    <section className="width__80 pd-top__bg">
+    <>
       {tour?.tourPlan?.map((visit, index) => (
         <div
           key={index}
@@ -26,6 +26,6 @@ export const TourPlan = () => {
             <span className="line"></span>
         </div>
       ))}
-    </section>
+    </>
   );
 };
