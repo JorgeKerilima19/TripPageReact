@@ -54,9 +54,9 @@ export const TourInfo = () => {
       </ul>
       <h4 className="section__subtitle">Photos</h4>
       <div className="flex flex__gap-sm flex__wrap flex__sp-center">
-        {tour?.photos?.map((el) => (
-          <img className="tour__photo" key={el} src={el} />
-        ))}
+        {tour?.photos?.map((el, index) =>
+          index < 3 ? <img className="tour__photo" key={el} src={el} /> : ""
+        )}
       </div>
     </>
   );

@@ -191,6 +191,9 @@ button {
 .mg-top__bg {
   margin-top: 5rem;
 }
+.mg-top__md {
+  margin-top: 3rem;
+}
 .mg-bottom__bg {
   margin-bottom: 5rem;
 }
