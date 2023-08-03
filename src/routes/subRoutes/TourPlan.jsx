@@ -9,7 +9,7 @@ export const TourPlan = () => {
       {tour?.tourPlan?.map((visit, index) => (
         <div
           key={index}
-          className="flex flex__column flex__gap-sm pd-bg ps__relative"
+          className="flex flex__column flex__gap-sm pd-bg ps__relative line__shadow-bottom"
         >
           <h3>{visit[`Day ${index + 1}`]}</h3>
           <p className="tour-info__body">{visit.description}</p>
@@ -23,7 +23,7 @@ export const TourPlan = () => {
           <div className="tour-info__number flex__container-center">
             <span>{index + 1}</span>
           </div>
-            <span className="line"></span>
+          <span className="line"></span>
         </div>
       ))}
     </>

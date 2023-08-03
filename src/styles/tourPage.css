@@ -91,6 +91,9 @@
   height: 80%;
   border-left-style: dotted;
 }
+.line__shadow-bottom {
+  box-shadow: 0.2rem 0.2rem 0.25rem var(--tertiary-color);
+}
 .tour__map {
   width: 100%;
   height: 40rem;
