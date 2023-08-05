@@ -124,6 +124,31 @@
   height: 100%;
   width: 100%;
 }
+.tour__user-photo {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.rating__container{
+  width: 15rem;
+}
+.star__container{
+  width: 7rem;
+}
+.tour__rating-star{
+  width: 1.4rem;
+  height: 1.1rem;
+}
+.tour__rating-star path {
+  color: white;
+  stroke: var(--tertiary-color);
+  stroke-width: 1rem;
+}
+.tour__rating-star.on path {
+  color: var(--primary-color);
+  stroke-width: 0;
+}
 @keyframes navLink {
   from {
     height: 100%;

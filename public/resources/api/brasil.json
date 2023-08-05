@@ -72,12 +72,14 @@
         {
           "id": 1,
           "userName": "Marco Polo",
+          "photo":"https://picsum.photos/200",
           "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
           "rates": { "hotel": 4, "meals": 4, "transportation": 5, "overall": 5 }
         },
         {
           "id": 2,
           "userName": "Susan White",
+          "photo":"https://picsum.photos/400",
           "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
           "rates": { "hotel": 5, "meals": 5, "transportation": 3, "overall": 4 }
         }
