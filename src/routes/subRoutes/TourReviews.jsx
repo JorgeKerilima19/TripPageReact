@@ -31,16 +31,18 @@ export const TourReviews = () => {
         });
       });
 
-      setHotelPoints(totalHotelPoints / tour.reviews.length);
-      setMealPoints(totalMealPoints / tour.reviews.length);
-      setTransportPoints(totalTransportPoints / tour.reviews.length);
-      setOverAll(totalOverAllPoints / tour.reviews.length);
+      setHotelPoints((totalHotelPoints * 2) / tour.reviews.length);
+      setMealPoints((totalMealPoints * 2) / tour.reviews.length);
+      setTransportPoints((totalTransportPoints * 2) / tour.reviews.length);
+      setOverAll((totalOverAllPoints * 2) / tour.reviews.length);
       setTotalPoints(
-        (totalHotelPoints +
-          totalMealPoints +
-          totalTransportPoints +
-          totalOverAllPoints) /
-          4
+        (
+          (totalHotelPoints +
+            totalMealPoints +
+            totalTransportPoints +
+            totalOverAllPoints) /
+          8
+        ).toFixed(1)
       );
     }
   }, [tour]);
@@ -53,15 +55,47 @@ export const TourReviews = () => {
         share your opinion with honesty and help us to improve our service and
         our connections.
       </p>
-      <section>
-        <div>
+      <section className="flex flex__wrap flex__gap-bg width__full flex__item-center flex__sp-center">
+        <div className="tour__review-total flex flex__sp-center flex__column flex__item-center flex__gap-md">
+          <span>
+            {Math.round((totalPoints * 10) / 10) > 6
+              ? "😁"
+              : Math.round((totalPoints * 10) / 10) > 5
+              ? "🙂"
+              : "🙄"}
+          </span>
           <h3>{totalPoints}</h3>
-          <span>{totalPoints > 6 ? "😁" : totalPoints > 5 ? "🙂" : "🙄"}</span>
         </div>
-        <div>Hotel {hotelPoints}</div>
-        <div>Meals {mealPoints}</div>
-        <div>transportation {transportPoints}</div>
-        <div>overAll {overAll}</div>
+        <div className="tour__review__container flex flex__column flex__gap-sm">
+          <div
+            style={{ "--width": `${hotelPoints * 10}%` }}
+            className="tour__review-bg"
+          >
+            <span>Hotel</span>
+            <span>{hotelPoints}</span>
+          </div>
+          <div
+            style={{ "--width": `${mealPoints * 10}%` }}
+            className="tour__review-bg"
+          >
+            <span>Meals</span>
+            <span>{mealPoints}</span>
+          </div>
+          <div
+            style={{ "--width": `${transportPoints * 10}%` }}
+            className="tour__review-bg"
+          >
+            <span>transportation</span>
+            <span>{transportPoints}</span>
+          </div>
+          <div
+            style={{ "--width": `${overAll * 10}%` }}
+            className="tour__review-bg"
+          >
+            <span>overAll</span>
+            <span>{overAll}</span>
+          </div>
+        </div>
       </section>
       <section className="flex__container">
         <h3>This is what people have to say about the tour</h3>

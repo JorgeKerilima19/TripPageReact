@@ -51,6 +51,9 @@ button {
   max-width: var(--max-width);
   margin: auto;
 }
+.border__radius-sm {
+  border-radius: 0.5rem;
+}
 .button__big {
   width: max(50%, 15rem);
   padding: 1rem;

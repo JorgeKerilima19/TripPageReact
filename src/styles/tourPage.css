@@ -153,6 +153,39 @@
   color: var(--primary-color);
   stroke-width: 0;
 }
+.tour__review-total {
+  width: 8rem;
+  background-color: var(--font-color-primary);
+  height: 9rem;
+  font-size: 2rem;
+}
+.tour__review__container {
+  width: max(80%, 12rem);
+}
+.tour__review-bg {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  position: relative;
+  background-color: var(--font-color-primary);
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+.tour__review-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.tour__review-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--width);
+  background-color: var(--primary-color);
+}
 @keyframes navLink {
   from {
     height: 100%;
