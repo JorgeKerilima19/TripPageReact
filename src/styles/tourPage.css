@@ -66,6 +66,10 @@
   line-height: 1.5rem;
   word-spacing: 0.15rem;
 }
+.tour-info__comment {
+  line-height: 1.8rem;
+  word-spacing: 0.09rem;
+}
 .tour__photo {
   height: 15rem;
   width: 15rem;
@@ -130,13 +134,13 @@
   object-fit: contain;
   border-radius: 50%;
 }
-.rating__container{
+.rating__container {
   width: 15rem;
 }
-.star__container{
+.star__container {
   width: 7rem;
 }
-.tour__rating-star{
+.tour__rating-star {
   width: 1.4rem;
   height: 1.1rem;
 }

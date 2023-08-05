@@ -2,12 +2,12 @@ import { FaStar } from "react-icons/fa6";
 
 const OpinionCard = ({ el, arr }) => {
   return (
-    <article className="flex flex__gap-md">
+    <article className="flex flex__gap-md mg-bottom__bg">
       <img className="tour__user-photo" src={el.photo} alt="userPhoto" />
-      <div>
+      <div className="flex flex__column flex__gap-md">
         <h2>{el.userName}</h2>
-        <p>{el.comment}</p>
-        <div className="flex flex__wrap flex__sp-center">
+        <p className="tour-info__comment">{el.comment}</p>
+        <div className="flex flex__wrap flex__sp-center flex__gap-md">
           {Object.entries(arr).map(([key, value], index) => (
             <div
               className="flex flex__gap-sm flex__wrap rating__container"

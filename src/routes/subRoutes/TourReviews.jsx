@@ -19,7 +19,7 @@ export const TourReviews = () => {
         </div>
         <div>General Reviews</div>
       </section>
-      <section>
+      <section className="flex__container">
         {tour?.reviews?.map((el) => (
           <OpinionCard key={el.id} el={el} arr={el.rates} />
         ))}
