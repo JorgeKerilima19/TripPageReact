@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { TourContext } from "../../context/TourContext";
+import OpinionCard from "../../jsx/OpinionCard";
+
 export const TourReviews = () => {
+  const { tour } = useContext(TourContext);
   return (
     <>
       <h2>Tour Reviews and Scores</h2>
@@ -7,9 +12,18 @@ export const TourReviews = () => {
         share your opinion with honesty and help us to improve our service and
         our connections.
       </p>
-      <div>
-        <div></div>
-      </div>
+      <section>
+        <div>
+          <h3>8.3</h3>
+          <span>😎Super</span>
+        </div>
+        <div>General Reviews</div>
+      </section>
+      <section>
+        {tour?.reviews?.map((el) => (
+          <OpinionCard key={el.id} el={el} arr={el.rates} />
+        ))}
+      </section>
     </>
   );
 };

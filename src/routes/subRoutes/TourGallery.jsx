@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TourContext } from "../../context/tourContext";
+import { TourContext } from "../../context/TourContext";
 
 export const TourGallery = () => {
   const { tour } = useContext(TourContext);
