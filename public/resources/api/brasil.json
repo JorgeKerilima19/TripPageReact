@@ -102,10 +102,96 @@
     {
       "placeId": 2,
       "name": "Iguazu Falls",
-      "banner": "https://images.unsplash.com/photo-1590246185449-e9e2ddd683bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80",
+      "banner": "https://images.unsplash.com/photo-1604626676599-e21a94462216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=763&q=80  ",
       "pricePerPerson": 700,
       "discount": false,
-      "discountAmount": 25
+      "discountAmount": 25,
+      "about": "Mauris fermentum suscipit auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat tortor sapien, sit amet faucibus orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.",
+      "ageLimit": "No age limit",
+      "tourInfo": {
+        "Destination": "Iguazu Falls Tour",
+        "Departure": "Your Hotel",
+        "Departure Time": "8:30 am",
+        "Return Time": "Approximately 16:30 pm",
+        "Dress Code Time": "No dress Code",
+        "Included?": {
+          "Vehicle": true,
+          "Personal Guide": true,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": false,
+          "tickets": true
+        }
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1474158495590-b00ac19269ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1538703012804-b74999aa11b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "https://images.unsplash.com/photo-1590246185449-e9e2ddd683bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=385&q=80",
+        "https://images.unsplash.com/photo-1612012539633-1ddf45bff52c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=994&q=80",
+        "https://images.unsplash.com/photo-1545832063-74f2d924b61a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1508710285745-edc8137d6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1542807201-48e5a816bec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      ],
+      "tourPlan": [
+        {
+          "Day 1": "Departure",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 2": "Exploring the city",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 3": "Return",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        }
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51253.86026632536!2d-54.43092692219532!3d-25.68265643310884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea0ca3aa1b6d%3A0x917b75179c5e987e!2sIguazu%20Falls!5e0!3m2!1sen!2spe!4v1691288549385!5m2!1sen!2spe",
+      "history": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at.",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Marco Polo",
+          "photo": "https://picsum.photos/200",
+          "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
+          "rates": { "hotel": 3, "meals": 4, "transportation": 4, "overall": 4 }
+        },
+        {
+          "id": 2,
+          "userName": "Susan White",
+          "photo": "https://picsum.photos/400",
+          "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
+          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+        },
+        {
+          "id": 3,
+          "userName": "Johan Terry",
+          "photo": "https://picsum.photos/500",
+          "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
+          "rates": { "hotel": 4, "meals": 3, "transportation": 5, "overall": 4 }
+        },
+        {
+          "id": 4,
+          "userName": "Brandom Wise",
+          "photo": "https://picsum.photos/600",
+          "comment": "I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides. It was like we had a friend in each city.",
+          "rates": { "hotel": 4, "meals": 4, "transportation": 5, "overall": 4 }
+        }
+      ]
     },
     {
       "placeId": 3,
