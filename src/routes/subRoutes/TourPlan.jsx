@@ -1,11 +1,12 @@
 import { useContext } from "react";
-import { TourContext } from "../../context/tourContext";
+import { TourContext } from "../../context/TourContext";
 
 export const TourPlan = () => {
   const { tour } = useContext(TourContext);
 
   return (
     <>
+      <h2 className="section__title">What are we going to do?</h2>
       {tour?.tourPlan?.map((visit, index) => (
         <div
           key={index}
