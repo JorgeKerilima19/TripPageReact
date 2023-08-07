@@ -199,7 +199,85 @@
       "banner": "https://images.unsplash.com/photo-1591232635364-707e5827d09f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "pricePerPerson": 600,
       "discount": false,
-      "discountAmount": 10
+      "discountAmount": 10,
+      "about": "The Chapada Diamantina National Park is one of the most fascinating natural parks of Brazil. The mountain scenery contains an extraordinary variety of ecosystems, from the arid Cerrado to the lush Mata Atlantica to the rocky terrain of the Caatinga. The bromelia and orchids find a welcoming environment, adapting themselves to the differences in climate and altitude. The mountain reach peaks of 1725m (5660 ft), and offer shelter to the jaguatirica (local wildcat), puma, mocó (rabbit-like rodent), deer, teius (lizard) and seriema (long-legged birds).",
+      "tourInfo": {
+        "Destination": "Chapada Diamantina Tour",
+        "Departure": "Your Hotel",
+        "Departure Time": "7:00 am",
+        "Return Time": "Approximately 17:30 pm",
+        "Dress Code Time": "Hiking clothes",
+        "Included?": {
+          "Vehicle": true,
+          "Personal Guide": true,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "tickets": false
+        }
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1556446847-0e5f4c0965f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/16/fb/5b/gruta-azul.jpg?w=1200&h=1200&s=1",
+        "https://d6z7b7h8.stackpathcdn.com/wp-content/uploads/2023/02/chapada-diamantina-bahia.jpg",
+        "https://familytripmagazine.com/wp-content/uploads/2022/11/shutterstock_1450907705-scaled-e1667869422159.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chapada_diamantina.jpg",
+        "https://jujunatrip.com/wp-content/uploads/2022/01/fazenda-pratinha-chapada-diamantina.jpg",
+        "https://quantocustaviajar.com/blog/wp-content/uploads/2019/09/gruta-da-pratinha-chapada-diamantina-1.jpg"
+      ],
+      "tourPlan": [
+        {
+          "Day 1": "Departure",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 2": "Exploring the city",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 3": "Return",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        }
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51253.86026632536!2d-54.43092692219532!3d-25.68265643310884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea0ca3aa1b6d%3A0x917b75179c5e987e!2sIguazu%20Falls!5e0!3m2!1sen!2spe!4v1691288549385!5m2!1sen!2spe",
+      "history": "The Chapada Diamantina National Park was established in 1985 and is currently undergoing a process of implementation, administered by the ministry of the environment (ICMBio Instituto Chico Mendes de Conservação da Biodiversidade), based in Palmeiras. \nFor security reasons and to safeguard the environment, the local guide associations in the area should be contacted prior to undertaking treks within the park. Tourist agencies, pousadas, hostels and other groups offering community hosting can all recommend trips by bike, off-road, canoe and trekking on foot, as well as on horseback. Other attractions available include new age, spiritual discovery and personal development, including past-life regression and other esoteric activities.",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Menna Blanco",
+          "photo": "https://picsum.photos/200",
+          "comment": "A standout feature of Tour is its meticulous attention to detail. Each itinerary is thoughtfully planned, ensuring a perfect balance between iconic landmarks and hidden gems. The handpicked local guides possess a wealth of knowledge and provide invaluable insights into the destination's history, traditions, and lesser-known stories. Throughout my journey, Tour's impeccable planning and execution made me feel like a privileged traveler, effortlessly blending with the local culture. Flexibility and Customization this agency fully understands that",
+          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+        },
+        {
+          "id": 2,
+          "userName": "Iohel Deadman",
+          "photo": "https://picsum.photos/400",
+          "comment": "Right off the bat, I was captivated by the sleek and intuitive design of Tour. With its user-friendly interface, navigating through the vast array of destinations and itineraries is a breeze. The seamless integration of interactive maps, stunning visuals, and detailed descriptions truly brings each journey to life. Whether you're an adventure seeker or a culture enthusiast, Tour presents a wide range of customizable options tailored to suit all types of travelers.",
+          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+        },
+        {
+          "id": 3,
+          "userName": "Svetlana Mortensen",
+          "photo": "https://picsum.photos/500",
+          "comment": "Imagine embarking on a transformative journey that takes you to the far corners of the globe, immersing you in diverse cultures and spectacular landscapes. This is precisely what Tour offers – a gateway to unforgettable experiences, opening doors to the world's most coveted destinations. As a seasoned traveler, I was fortunate to test out Tour and unveil its true potential. In this comprehensive review, I will share my genuine thoughts and insights to help you make an informed decision about this remarkable travel companion.",
+          "rates": { "hotel": 5, "meals": 4, "transportation": 3, "overall": 4 }
+        }
+      ]
     },
     {
       "placeId": 4,

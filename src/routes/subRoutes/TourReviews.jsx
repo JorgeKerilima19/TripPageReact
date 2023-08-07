@@ -31,10 +31,12 @@ export const TourReviews = () => {
         });
       });
 
-      setHotelPoints((totalHotelPoints * 2) / tour.reviews.length);
-      setMealPoints((totalMealPoints * 2) / tour.reviews.length);
-      setTransportPoints((totalTransportPoints * 2) / tour.reviews.length);
-      setOverAll((totalOverAllPoints * 2) / tour.reviews.length);
+      setHotelPoints(((totalHotelPoints * 2) / tour.reviews.length).toFixed(1));
+      setMealPoints(((totalMealPoints * 2) / tour.reviews.length).toFixed(1));
+      setTransportPoints(
+        ((totalTransportPoints * 2) / tour.reviews.length).toFixed(1)
+      );
+      setOverAll(((totalOverAllPoints * 2) / tour.reviews.length).toFixed(1));
       setTotalPoints(
         (
           (totalHotelPoints +
