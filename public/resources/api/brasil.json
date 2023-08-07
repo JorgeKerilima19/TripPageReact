@@ -282,10 +282,88 @@
     {
       "placeId": 4,
       "name": "Carnival in Brazil",
-      "banner": "https://images.unsplash.com/photo-1659700547307-6db624dc0cb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=550&q=80",
+      "banner": "https://static01.nyt.com/images/2022/01/05/world/05virus-briefing-rio-carnival-cancelled/merlin_169480665_120467b3-ba18-49d0-bd07-20862b042717-videoSixteenByNine3000.jpg?year=2022&h=1688&w=3000&s=e4550e45e172629b87b20729ab500f5998758ae56196f077fb62daddeb8e2479&k=ZQJBKqZ0VN&tw=1",
       "pricePerPerson": 1500,
       "discount": false,
-      "discountAmount": 0
+      "discountAmount": 0,
+      "about": "“As she moves, she's like a samba that swings so cool and sways so gentle.” So goes the fabled bossa nova tune, “The Girl from Ipanema,” a loving ode to Rio de Janeiro’s most infamous beauty. Just like the tune’s namesake, the spirit of samba pulsates throughout the Rio Carnival. It’s a joy-filled festa that attracts two million revellers per day each year to the streets of Brazil’s most sun-kissed and storied city.",
+      "tourInfo": {
+        "Destination": "Chapada Diamantina Tour",
+        "Departure": "Your Hotel",
+        "Departure Time": "7:00 am",
+        "Return Time": "Approximately 17:30 pm",
+        "Dress Code Time": "Hiking clothes",
+        "Included?": {
+          "Vehicle": true,
+          "Personal Guide": true,
+          "Breakfast": true,
+          "Lunch": true,
+          "Dinner": true,
+          "tickets": false
+        }
+      },
+      "photos": [
+        "https://www.rio-tickets.com/cdn/shop/files/WhatsApp_Image_2022-11-08_at_2.52.56_AM.jpg?v=1667898683&width=1280",
+        "https://th-thumbnailer.cdn-si-edu.com/NSkU31zO7fXQKXIGB3hPwTYFA-M=/1400x1050/filters:focal(2784x1856:2785x1857)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c3/8e/c38e958c-e6c7-4423-a31e-c0dadde122dd/gettyimages-1240193725.jpg",
+        "https://images.axios.com/JnQj3bIo0uxyTKThPFYUWhJstqE=/2023/02/20/1676917547621.jpg",
+        "https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1622488520/shutterstock_593488676-carnivaljpg1120/shutterstock_593488676-carnivaljpg1120-1120x732.jpg",
+        "https://d.ibtimes.co.uk/en/full/1487308/rio-carnival.jpg",
+        "https://media.istockphoto.com/id/471517281/photo/carnival-in-rio-de-janeiro-2013.jpg?s=612x612&w=0&k=20&c=JSym34OM7-HMMZqTBKpZ0hqYOAbTEIUQC-jGZpoo0MI=",
+        "https://cdn.cnn.com/cnnnext/dam/assets/170223142835-rio-carnival-sambodromo.jpg"
+      ],
+      "tourPlan": [
+        {
+          "Day 1": "Departure",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 2": "Exploring the city",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        },
+        {
+          "Day 3": "Return",
+          "description": "orci molestie sit amet. Nunc ut rutrum urna, quis venenatis est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus neque. Vestibulum sed pretium massa. Vestibulum egestas at",
+          "steps": {
+            "1": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "2": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.",
+            "3": "Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est."
+          }
+        }
+      ],
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6545.329771739659!2d-43.19124666696434!3d-22.970759115684366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd54090bfd0a3%3A0xf2e8a97fde1fd02d!2sRIO-CARNIVAL!5e0!3m2!1sen!2spe!4v1691382816170!5m2!1sen!2spe",
+      "history": "Partying is a sacred art in Brazil, and the Rio Carnival is the pinnacle of this time-honored tradition. Thrumming with the intoxicating rhythm of drums, the streets pack out for six days in a celebration of diversity. Yet more lyrics from the famed song – “tall and tan and young and lovely” – spring to mind as you observe the dancers igniting Rio’s streets. Skilled showgirls with bronzed skin and wide grins lead samba bands raucously through the city. Here no outfit is too ostentatious, and golden sequins glint in the heady sunshine.",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Menna Blanco",
+          "photo": "https://picsum.photos/200",
+          "comment": "A standout feature of Tour is its meticulous attention to detail. Each itinerary is thoughtfully planned, ensuring a perfect balance between iconic landmarks and hidden gems. The handpicked local guides possess a wealth of knowledge and provide invaluable insights into the destination's history, traditions, and lesser-known stories. Throughout my journey, Tour's impeccable planning and execution made me feel like a privileged traveler, effortlessly blending with the local culture. Flexibility and Customization this agency fully understands that",
+          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+        },
+        {
+          "id": 2,
+          "userName": "Iohel Deadman",
+          "photo": "https://picsum.photos/400",
+          "comment": "Right off the bat, I was captivated by the sleek and intuitive design of Tour. With its user-friendly interface, navigating through the vast array of destinations and itineraries is a breeze. The seamless integration of interactive maps, stunning visuals, and detailed descriptions truly brings each journey to life. Whether you're an adventure seeker or a culture enthusiast, Tour presents a wide range of customizable options tailored to suit all types of travelers.",
+          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+        },
+        {
+          "id": 3,
+          "userName": "Svetlana Mortensen",
+          "photo": "https://picsum.photos/500",
+          "comment": "Imagine embarking on a transformative journey that takes you to the far corners of the globe, immersing you in diverse cultures and spectacular landscapes. This is precisely what Tour offers – a gateway to unforgettable experiences, opening doors to the world's most coveted destinations. As a seasoned traveler, I was fortunate to test out Tour and unveil its true potential. In this comprehensive review, I will share my genuine thoughts and insights to help you make an informed decision about this remarkable travel companion.",
+          "rates": { "hotel": 5, "meals": 4, "transportation": 3, "overall": 4 }
+        }
+      ]
     }
   ]
 }
