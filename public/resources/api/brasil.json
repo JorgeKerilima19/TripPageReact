@@ -296,10 +296,10 @@
         "Included?": {
           "Vehicle": true,
           "Personal Guide": true,
-          "Breakfast": true,
-          "Lunch": true,
-          "Dinner": true,
-          "tickets": false
+          "Breakfast": false,
+          "Lunch": false,
+          "Dinner": false,
+          "tickets": true
         }
       },
       "photos": [
@@ -347,21 +347,21 @@
           "userName": "Menna Blanco",
           "photo": "https://picsum.photos/200",
           "comment": "A standout feature of Tour is its meticulous attention to detail. Each itinerary is thoughtfully planned, ensuring a perfect balance between iconic landmarks and hidden gems. The handpicked local guides possess a wealth of knowledge and provide invaluable insights into the destination's history, traditions, and lesser-known stories. Throughout my journey, Tour's impeccable planning and execution made me feel like a privileged traveler, effortlessly blending with the local culture. Flexibility and Customization this agency fully understands that",
-          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+          "rates": { "hotel": 5, "meals": 5, "transportation": 4, "overall": 4 }
         },
         {
           "id": 2,
           "userName": "Iohel Deadman",
           "photo": "https://picsum.photos/400",
           "comment": "Right off the bat, I was captivated by the sleek and intuitive design of Tour. With its user-friendly interface, navigating through the vast array of destinations and itineraries is a breeze. The seamless integration of interactive maps, stunning visuals, and detailed descriptions truly brings each journey to life. Whether you're an adventure seeker or a culture enthusiast, Tour presents a wide range of customizable options tailored to suit all types of travelers.",
-          "rates": { "hotel": 4, "meals": 5, "transportation": 5, "overall": 5 }
+          "rates": { "hotel": 4, "meals": 5, "transportation": 4, "overall": 4 }
         },
         {
           "id": 3,
           "userName": "Svetlana Mortensen",
           "photo": "https://picsum.photos/500",
           "comment": "Imagine embarking on a transformative journey that takes you to the far corners of the globe, immersing you in diverse cultures and spectacular landscapes. This is precisely what Tour offers – a gateway to unforgettable experiences, opening doors to the world's most coveted destinations. As a seasoned traveler, I was fortunate to test out Tour and unveil its true potential. In this comprehensive review, I will share my genuine thoughts and insights to help you make an informed decision about this remarkable travel companion.",
-          "rates": { "hotel": 5, "meals": 4, "transportation": 3, "overall": 4 }
+          "rates": { "hotel": 5, "meals": 5, "transportation": 4, "overall": 5 }
         }
       ]
     }
