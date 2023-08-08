@@ -1,8 +1,9 @@
 import { useEffect, useContext } from "react";
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet, useParams, Link } from "react-router-dom";
+import { BsArrowLeftCircleFill } from "react-icons/bs";
 
+import { TourContext } from "../context/TourContext";
 import "../styles/tourPage.css";
-import { TourContext } from "../context/tourContext";
 
 export function TourPage() {
   const { getData, destination, setDestination } = useContext(TourContext);
@@ -29,6 +30,9 @@ export function TourPage() {
       >
         <h2>{destination.name}</h2>
         <span>{destination.slogan}</span>
+        <Link className="banner-md__button" to={`/service`}>
+          <BsArrowLeftCircleFill className="go-back" />
+        </Link>
       </div>
       <Outlet />
     </section>

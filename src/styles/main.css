@@ -216,6 +216,18 @@
   background-color: var(--primary-color);
   color: var(--font-color-primary);
 }
+.banner-md__button {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: var(--font-color-primary);
+}
 @media (max-width: 800px) {
   .contact__img-container {
     display: none;
