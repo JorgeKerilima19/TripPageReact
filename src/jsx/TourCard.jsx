@@ -11,7 +11,7 @@ const TourCard = ({ tour }) => {
         src={tour.banner}
         alt=""
       />
-      <div className="flex flex__sp-btw width__90">
+      <div className="flex flex__sp-btw flex__item-center width__90">
         <h4 className="card__title">{tour.name}</h4>
         <span className="card__price">$/{tour.pricePerPerson}</span>
       </div>
