@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   bottom: 0;
   color: var(--font-color-primary);
 }
@@ -59,7 +59,7 @@
 .go-back {
   width: 90%;
   height: 90%;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .link__container {
   height: 3.5rem;
@@ -68,6 +68,20 @@
   position: relative;
   background-color: var(--bg-color);
   border-radius: 0.5rem 0.5rem 0 0;
+}
+.tour__container {
+  align-self: flex-start;
+  padding-left: 5rem;
+}
+.aside {
+  position: absolute;
+  width: max(15rem, 38%);
+  background-color: var(--secondary-color);
+  padding: 2rem 1rem;
+  border-radius: 1rem 0 1rem;
+  left: 102%;
+  top: 0;
+  color: var(--font-color-primary);
 }
 .tour-info__body {
   line-height: 1.8rem;
@@ -94,7 +108,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   color: var(--font-color-primary);
   font-size: 1.5rem;
   z-index: 100;
@@ -237,6 +251,16 @@
   .a.active {
     animation: none;
     transition: 0.3s;
+  }
+  .tour__container {
+    align-self: center;
+    width: 80%;
+    padding-left: 0;
+  }
+  .aside {
+    position: relative;
+    left: 0;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {

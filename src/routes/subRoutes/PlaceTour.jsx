@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { TourContext } from "../../context/TourContext";
 import { Outlet, useParams } from "react-router-dom";
 import SubNavbar from "../../jsx/SubNavbar";
+import BookTour from "../../jsx/BookTour";
 
 export const PlaceTour = () => {
   const { getData, tour, setTour, setTourEntries } = useContext(TourContext);
@@ -18,7 +19,7 @@ export const PlaceTour = () => {
 
   return (
     <>
-      <div className="width__80 flex flex__sp-center ps__relative subNavbar-container">
+      <div className="width__90 flex flex__sp-center ps__relative subNavbar-container">
         <div
           className="banner__md flex__container-center"
           style={{ backgroundImage: `url(${tour.banner})` }}
@@ -27,8 +28,9 @@ export const PlaceTour = () => {
         </div>
         <SubNavbar />
       </div>
-      <section className="section__container flex__gap-bg width__80 mg-bottom__bg">
+      <section className="section__container flex__gap-bg width__70 mg-bottom__bg tour__container ps__relative">
         <Outlet />
+        <BookTour />
       </section>
     </>
   );
