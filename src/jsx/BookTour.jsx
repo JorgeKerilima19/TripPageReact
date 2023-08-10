@@ -11,18 +11,16 @@ const requiredInfo = [
 ];
 
 const BookTour = () => {
-  const { tour, wishList, setWishList } = useContext(TourContext);
+  const { tour, addToCart } = useContext(TourContext);
 
-  const addToCart = (e) => {
-    e.preventDefault();
-    setWishList([...tour]);
-    console.log(wishList);
-  };
   return (
     <aside className="aside flex__container-center flex__gap-bg">
       <h3 className="section__title">Book This Tour</h3>
       <form
-        onSubmit={addToCart}
+        onSubmit={(e) => {
+          e.preventDefault();
+          addToCart(tour);
+        }}
         className="pd-sm flex flex__column flex__gap-md width__90"
       >
         {requiredInfo.map((el) => (
