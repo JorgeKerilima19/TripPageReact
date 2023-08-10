@@ -15,8 +15,9 @@ const BookTour = () => {
 
   const addToCart = (e) => {
     e.preventDefault();
+    setWishList([...tour]);
+    console.log(wishList);
   };
-
   return (
     <aside className="aside flex__container-center flex__gap-bg">
       <h3 className="section__title">Book This Tour</h3>

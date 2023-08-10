@@ -1,9 +1,13 @@
 import "../index.css";
 import "../styles/navbarStyle.css";
+
 import { Outlet, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { IoIosCart } from "react-icons/io";
+import { TourContext } from "../context/TourContext";
 
 import img from "../assets/socialLogo.svg";
+
 import HamburgerMenu from "../jsx/HamburgerMenu";
 import Footer from "../jsx/Footer";
 
@@ -58,11 +62,10 @@ export const NavItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { wishList } = useContext(TourContext);
   function setOpen() {
     setIsOpen((isOpen) => !isOpen);
   }
-
   return (
     <>
       <header className="header">
@@ -90,6 +93,14 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
+        {wishList.length > 0 ? (
+          <div className="cart__container">
+            <IoIosCart className="cart__icon" />
+            <span className="cart__number">{wishList.length}</span>
+          </div>
+        ) : (
+          ""
+        )}
       </header>
 
       <main className="main__column">
