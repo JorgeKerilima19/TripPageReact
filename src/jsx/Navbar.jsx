@@ -1,6 +1,6 @@
 import "../index.css";
 import "../styles/navbarStyle.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 import img from "../assets/socialLogo.svg";
@@ -72,10 +72,19 @@ export default function Navbar() {
           <ul className={`navbar ${isOpen}`}>
             {NavItems.map((item, index) => {
               return (
-                <li key={index} className="navbar-item">
-                  <Link className="item-link" to={item.url} onClick={setOpen}>
+                <li
+                  key={index}
+                  className="navbar-item flex flex__item-center flex__sp-center"
+                >
+                  <NavLink
+                    className={(className) =>
+                      className.isActive ? "item-link active-link" : "item-link"
+                    }
+                    to={item.url}
+                    onClick={setOpen}
+                  >
                     <span className="item-link_text">{item.title}</span>
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })}

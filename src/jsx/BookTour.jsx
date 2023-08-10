@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import { TourContext } from "../context/TourContext";
 
 const requiredInfo = [
   "Name",
@@ -10,11 +11,17 @@ const requiredInfo = [
 ];
 
 const BookTour = () => {
+  const { tour, wishList, setWishList } = useContext(TourContext);
+
+  const addToCart = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <aside className="aside flex__container-center flex__gap-bg">
       <h3 className="section__title">Book This Tour</h3>
       <form
-        action=""
+        onSubmit={addToCart}
         className="pd-sm flex flex__column flex__gap-md width__90"
       >
         {requiredInfo.map((el) => (
@@ -34,6 +41,9 @@ const BookTour = () => {
           </label>
           <textarea className="form__textarea" name="text"></textarea>
         </div>
+        <button className="form__button" type="submit">
+          See Availability
+        </button>
       </form>
     </aside>
   );
