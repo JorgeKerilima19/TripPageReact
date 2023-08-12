@@ -4,6 +4,7 @@ import HeroImage from "../jsx/HeroImage";
 import Destinations from "../jsx/Destination";
 
 import "../index.css";
+import Features from "../jsx/Features";
 
 export function Home() {
   return (
@@ -15,6 +16,11 @@ export function Home() {
           {data.map((item, index) => {
             return <Destinations key={index} item={item} />;
           })}
+        </section>
+        <section className="section__container">
+          <h4>We help you to get a better experience</h4>
+          <h3>FIND YOUR TRAVEL PERFECTION</h3>
+          <Features />
         </section>
       </div>
     </>
