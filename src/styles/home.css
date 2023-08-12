@@ -70,6 +70,19 @@
   height: 20rem;
   object-fit: cover;
 }
+.homepage__feature-container{
+  width: 12rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  gap: 0.5rem;
+  border: thin solid var(--tertiary-color);
+}
+.homepage__feature-svg {
+  width: 7rem;
+  height: 7rem;
+  color: var(--primary-color);
+}
 @media (max-width: 700px) {
   .homepage__destinations {
     grid-template-columns: repeat(1, minmax(20rem, 2fr));

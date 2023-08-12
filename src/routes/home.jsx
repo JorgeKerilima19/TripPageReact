@@ -11,15 +11,17 @@ export function Home() {
     <>
       <HeroImage src={"Home"} />
       <h2 className="section-title">Popular Destinations</h2>
-      <div className="flex flex__column flex__item-center pd-bg">
+      <div className="flex flex__column flex__item-center flex__gap-bg pd-sm mg-bottom__bg">
         <section className="homepage__destinations">
           {data.map((item, index) => {
             return <Destinations key={index} item={item} />;
           })}
         </section>
-        <section className="section__container">
-          <h4>We help you to get a better experience</h4>
-          <h3>FIND YOUR TRAVEL PERFECTION</h3>
+        <section className="flex__container flex__item-center width__full">
+          <div className="flex flex__column flex__gap-sm">
+            <h4>We help you to get a better experience</h4>
+            <h3>FIND YOUR TRAVEL PERFECTION</h3>
+          </div>
           <Features />
         </section>
       </div>

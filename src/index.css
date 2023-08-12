@@ -54,6 +54,12 @@ button {
 .border__radius-sm {
   border-radius: 0.5rem;
 }
+.border__radius-md {
+  border-radius: 1rem;
+}
+.border__radius-50 {
+  border-radius: 50%;
+}
 .button__big {
   width: max(50%, 15rem);
   padding: 1rem;
@@ -144,6 +150,9 @@ button {
 }
 .flex__sp-ard {
   justify-content: space-around;
+}
+.flex__sp-evl {
+  justify-content: space-evenly;
 }
 .flex__item-start {
   align-items: start;
