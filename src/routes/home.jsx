@@ -12,7 +12,7 @@ export function Home() {
       <HeroImage src={"Home"} />
       <h2 className="section-title">Popular Destinations</h2>
       <div className="flex flex__column flex__item-center pd-bg">
-        <section className="container__cards flex__sp-center width__90">
+        <section className="homepage__destinations">
           {data.map((item, index) => {
             return <Destinations key={index} item={item} />;
           })}

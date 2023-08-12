@@ -23,7 +23,7 @@ const Features = () => {
   return (
     <div>
       {features.map((el) => (
-        <div>{el.name}</div>
+        <div key={el.name}>{el.name}</div>
       ))}
     </div>
   );
