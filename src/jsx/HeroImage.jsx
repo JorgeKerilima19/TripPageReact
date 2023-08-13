@@ -1,5 +1,8 @@
 import { NavItems as data } from "./Navbar";
+import { Link } from "react-router-dom";
+
 import "../styles/main.css";
+import backToTop from "../helpers/functions/backToTop";
 
 export default function HeroImage({ src }) {
   return (
@@ -15,13 +18,13 @@ export default function HeroImage({ src }) {
               <div>
                 <h2 className="hero-image_title">{el.name}</h2>
                 <h3 className="hero-image_slogan">{el.textDescription}</h3>
-                <a href="#">
+                <Link onClick={backToTop} to={"/service"}>
                   <button
                     className={el.title === "Home" ? "button__big" : "hide"}
                   >
                     Choose your Destination
                   </button>
-                </a>
+                </Link>
               </div>
             </section>
           );

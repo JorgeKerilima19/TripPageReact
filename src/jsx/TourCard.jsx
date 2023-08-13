@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import backToTop from "../helpers/functions/backToTop";
 
 const TourCard = ({ tour }) => {
   return (
     <Link
       to={`./${tour.placeId}`}
       className="card__container-md flex flex__column flex__gap-sm flex__item-center ps__relative"
+      onClick={() => {
+        backToTop(352);
+      }}
     >
       <img
         className="destination-card__img width__90"

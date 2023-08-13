@@ -18,10 +18,7 @@ export function Home() {
           })}
         </section>
         <section className="flex__container flex__item-center width__full">
-          <div className="flex flex__column flex__gap-sm">
-            <h4>We help you to get a better experience</h4>
-            <h3>FIND YOUR TRAVEL PERFECTION</h3>
-          </div>
+          <h4 className="section__title">The Sky Travel Experience</h4>
           <Features />
         </section>
       </div>

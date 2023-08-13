@@ -70,21 +70,40 @@
   height: 20rem;
   object-fit: cover;
 }
-.homepage__feature-container{
-  width: 12rem;
-  padding: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  gap: 0.5rem;
-  border: thin solid var(--tertiary-color);
+.homepage__feature-container {
+  width: 18rem;
+  color: var(--tertiary-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .homepage__feature-svg {
-  width: 7rem;
-  height: 7rem;
-  color: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  color: var(--tertiary-color);
+}
+.svg__bg {
+  --tertiary-color: hsla(170, 25%, 53%, 0.582);
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 3.5rem;
+  height: 3rem;
+  background-color: var(--tertiary-color);
+  clip-path: polygon(0 61%, 0 75%, 25% 100%, 100% 12%, 100% 0, 25% 88%);
+  z-index: -1;
+}
+.homepage__feature-name {
+  --tertiary-color: hsl(170, 100%, 15%);
+  font-weight: bold;
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+}
+.homepage__feature-des {
+  --tertiary-color: hsla(170, 100%, 15%, 0.548);
+  color: var(--tertiary-color);
+  font-size: 0.9rem;
 }
 @media (max-width: 700px) {
   .homepage__destinations {
-    grid-template-columns: repeat(1, minmax(20rem, 2fr));
+    grid-template-columns: repeat(1, minmax(15rem, 2fr));
   }
 }
