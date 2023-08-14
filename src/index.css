@@ -287,6 +287,12 @@ button {
   font-size: 1.1rem;
   font-weight: 300;
 }
+.text-alg__center {
+  text-align: center;
+}
+.text__italic {
+  font-style: italic;
+}
 .width__full {
   width: 100%;
 }

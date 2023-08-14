@@ -5,6 +5,7 @@ import Destinations from "../jsx/Destination";
 
 import "../index.css";
 import Features from "../jsx/Features";
+import CustomerReview from "../jsx/CustomerReview";
 
 export function Home() {
   return (
@@ -20,6 +21,10 @@ export function Home() {
         <section className="flex__container flex__item-center width__full">
           <h4 className="section__title">The Sky Travel Experience</h4>
           <Features />
+        </section>
+        <section className="flex__container flex__item-center width__full">
+          <h4 className="section__title">What Our Customers Have To Say </h4>
+          <CustomerReview />
         </section>
       </div>
     </>

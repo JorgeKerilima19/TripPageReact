@@ -102,6 +102,48 @@
   color: var(--tertiary-color);
   font-size: 0.9rem;
 }
+.homepage__review-container {
+  --primary-color: hsl(24, 100%, 85%);
+  background-color: var(--primary-color);
+  min-height: 30rem;
+}
+.homepage__review-item__container {
+  width: min(24rem, 100%);
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  transition: 0.5s;
+  bottom: 0;
+}
+.homepage__review-item__container:hover {
+  bottom: 1rem;
+}
+.review__comment {
+  font-size: 1.06rem;
+  word-spacing: 0.5rem;
+  line-height: 1.5rem;
+}
+.review__comment::before,
+.review__comment::after {
+  font-size: 3rem;
+  color: var(--tertiary-color);
+}
+.review__comment::after {
+  content: "❞";
+  position: absolute;
+  bottom: -0.5rem;
+}
+.review__comment::before {
+  content: "❝";
+  font-size: 3rem;
+  position: relative;
+  top: 0.2rem;
+}
+.review__user-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
 @media (max-width: 700px) {
   .homepage__destinations {
     grid-template-columns: repeat(1, minmax(15rem, 2fr));
