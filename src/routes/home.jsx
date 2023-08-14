@@ -11,7 +11,7 @@ export function Home() {
   return (
     <>
       <HeroImage src={"Home"} />
-      <h2 className="section-title">Popular Destinations</h2>
+      <h2 className="section-title">Countries To Visit</h2>
       <div className="flex flex__column flex__item-center flex__gap-bg pd-sm mg-bottom__bg">
         <section className="homepage__destinations">
           {data.map((item, index) => {
@@ -19,11 +19,11 @@ export function Home() {
           })}
         </section>
         <section className="flex__container flex__item-center width__full">
-          <h4 className="section__title">The Sky Travel Experience</h4>
+          <h4 className="section-title">The Sky Travel Experience</h4>
           <Features />
         </section>
         <section className="flex__container flex__item-center width__full">
-          <h4 className="section__title">What Our Customers Have To Say </h4>
+          <h4 className="section-title">What Our Customers Have To Say </h4>
           <CustomerReview />
         </section>
       </div>

@@ -113,11 +113,11 @@
   padding: 1.5rem;
   border-radius: 1rem;
   position: relative;
+  transform: translateY(0);
   transition: 0.5s;
-  bottom: 0;
 }
 .homepage__review-item__container:hover {
-  bottom: 1rem;
+  transform: translateY(-1rem);
 }
 .review__comment {
   font-size: 1.06rem;
@@ -143,6 +143,7 @@
 .review__user-name {
   font-weight: 700;
   font-size: 0.9rem;
+  text-decoration: lined;
 }
 @media (max-width: 700px) {
   .homepage__destinations {
