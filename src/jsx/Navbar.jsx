@@ -10,6 +10,7 @@ import img from "../assets/socialLogo.svg";
 
 import HamburgerMenu from "../jsx/HamburgerMenu";
 import Footer from "../jsx/Footer";
+import backToTop from "../helpers/functions/backToTop";
 
 export const NavItems = [
   {
@@ -65,6 +66,7 @@ export default function Navbar() {
   const { wishList } = useContext(TourContext);
   function setOpen() {
     setIsOpen((isOpen) => !isOpen);
+    backToTop();
   }
   return (
     <>
