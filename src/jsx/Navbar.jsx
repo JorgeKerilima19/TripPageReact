@@ -63,11 +63,16 @@ export const NavItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
   const { wishList } = useContext(TourContext);
-  function setOpen() {
+  const setOpen = () => {
     setIsOpen((isOpen) => !isOpen);
     backToTop();
-  }
+  };
+  const handleCart = () => {
+    setOpenCart((openCart) => !openCart);
+  };
+
   return (
     <>
       <header className="header">
@@ -96,10 +101,15 @@ export default function Navbar() {
           </ul>
         </nav>
         {wishList.length > 0 ? (
-          <div className="cart__container">
-            <IoIosCart className="cart__icon" />
-            <span className="cart__number">{wishList.length}</span>
-          </div>
+          <>
+            <div className="cart__container">
+              <IoIosCart onClick={handleCart} className="cart__icon" />
+              <span className="cart__number">{wishList.length}</span>
+              <div style={{ display: `${openCart ? "block" : "none"}` }}>
+                xd
+              </div>
+            </div>
+          </>
         ) : (
           ""
         )}
