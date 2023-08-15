@@ -33,6 +33,7 @@ button {
   --font-color-primary: hsl(0, 0%, 93%);
   --font-color-secondary: hsl(0, 0%, 0%);
   --max-width: 88rem;
+  --total-height: calc(100vh - var(--header-height));
 }
 .svg-holder-image {
   width: 3rem;
@@ -183,6 +184,9 @@ button {
 }
 .font__wg-600 {
   font-weight: 600;
+}
+.font__1-1 {
+  font-size: 1.1rem;
 }
 .form__container-input {
   width: 100%;

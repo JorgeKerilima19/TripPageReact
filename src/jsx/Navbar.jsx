@@ -1,7 +1,7 @@
 import "../index.css";
 import "../styles/navbarStyle.css";
 
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { IoIosCart } from "react-icons/io";
 import { TourContext } from "../context/TourContext";
@@ -64,7 +64,7 @@ export const NavItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openCart, setOpenCart] = useState(false);
-  const { wishList } = useContext(TourContext);
+  const { wishList, addToCart, removeFromCart } = useContext(TourContext);
   const setOpen = () => {
     setIsOpen((isOpen) => !isOpen);
     backToTop();
@@ -100,23 +100,67 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
-        {wishList.length > 0 ? (
-          <>
-            <div className="cart__container">
-              <IoIosCart onClick={handleCart} className="cart__icon" />
-              <span className="cart__number">{wishList.length}</span>
-              <div style={{ display: `${openCart ? "block" : "none"}` }}>
-                xd
-              </div>
+        <div className="cart__container">
+          <IoIosCart onClick={handleCart} className="cart__icon" />
+          {wishList.length > 0 ? (
+            <span className="cart__number">{wishList.length}</span>
+          ) : (
+            ""
+          )}
+          <div
+            className={`flex flex__column flex__gap-bg cart__list ${
+              openCart ? "displayed" : ""
+            }`}
+          >
+            <h4 className="section__subtitle">Your Cart</h4>
+            <div className="flex__list flex__column">
+              {wishList.length <= 0 ? (
+                <span>Your Cart is Empty</span>
+              ) : (
+                <ul className="flex__list flex__column flex__gap-md">
+                  {wishList.map((el) => (
+                    <li
+                      className="pd-sm cart__item flex flex__column flex__gap-sm"
+                      key={el.name}
+                    >
+                      <div className="flex flex__item-center flex__sp-btw flex__gap-md">
+                        <img
+                          className="cart__item-img"
+                          src={el.banner}
+                          alt="element__img"
+                        />
+                        <div className="flex flex__column flex__item-end">
+                          <span>{el.name}</span>
+                          <span className="color__tertiary font__1-1">
+                            ${el.pricePerPerson}
+                          </span>
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => {
+                          removeFromCart(el);
+                        }}
+                        className="button__remove"
+                      >
+                        Remove
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
-          </>
-        ) : (
-          ""
-        )}
+            <div className="cart__info-container flex flex__sp-btw flex__item-center">
+              <span>Total:240 $</span>
+              <button className="button__pay">
+                <Link>Proceed to Pay</Link>
+              </button>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main className="main__column">
-        <Outlet></Outlet>
+        <Outlet />
       </main>
       <Footer />
     </>

@@ -2,25 +2,25 @@
   padding: 0.5rem;
   position: fixed;
   right: 0.5rem;
-  top: 5rem;
+  top: 4rem;
   display: grid;
-  place-content: center;
+  place-items: end;
 }
 .cart__icon {
   background-color: var(--font-color-primary);
   padding: 0.2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border: 0.15rem solid var(--primary-color);
   border-radius: 50%;
   color: var(--primary-color);
   position: relative;
-  display: block;
-  position: relative;
+  z-index: 100;
 }
 .cart__number {
   position: absolute;
-  left: 0.5rem;
+  right: 0.5rem;
+  top: 0;
   background-color: var(--secondary-color);
   width: 1.5rem;
   height: 1.5rem;
@@ -28,6 +28,48 @@
   display: grid;
   place-content: center;
   border-radius: 50%;
+  z-index: 100;
+}
+.cart__list {
+  background-color: var(--bg-color);
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+.displayed {
+  display: flex;
+  width: min(20rem, 98vw);
+  height: max(17rem, var(--total-height));
+  padding: 2rem 1rem;
+}
+.cart__item {
+  border: thin solid var(--tertiary-color);
+}
+.cart__item-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.button__remove {
+  background-color: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  color: var(--font-color-primary);
+}
+.button__pay {
+  padding: 0.6rem 1rem;
+  background-color: var(--tertiary-color);
+}
+.cart__info-container {
+  color: var(--font-color-primary);
+  background-color: var(--secondary-color);
+  min-height: 4rem;
+  gap: 2rem;
+  padding-left: 1rem;
 }
 .hero-section {
   position: relative;
