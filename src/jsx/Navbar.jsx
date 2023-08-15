@@ -2,7 +2,7 @@ import "../index.css";
 import "../styles/navbarStyle.css";
 
 import { Outlet, NavLink, Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoIosCart } from "react-icons/io";
 import { TourContext } from "../context/TourContext";
 
@@ -64,7 +64,8 @@ export const NavItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openCart, setOpenCart] = useState(false);
-  const { wishList, addToCart, removeFromCart } = useContext(TourContext);
+  const [total, setTotal] = useState(0);
+  const { wishList, removeFromCart } = useContext(TourContext);
   const setOpen = () => {
     setIsOpen((isOpen) => !isOpen);
     backToTop();
@@ -72,6 +73,22 @@ export default function Navbar() {
   const handleCart = () => {
     setOpenCart((openCart) => !openCart);
   };
+
+  const payTotal = () => {
+    if (wishList.length > 0) {
+      let amount = 0;
+      wishList.forEach((el) => {
+        amount += el.pricePerPerson;
+      });
+      setTotal(amount);
+    } else {
+      setTotal(0);
+    }
+  };
+
+  useEffect(() => {
+    payTotal();
+  }, [wishList]);
 
   return (
     <>
@@ -108,7 +125,7 @@ export default function Navbar() {
             ""
           )}
           <div
-            className={`flex flex__column flex__gap-bg cart__list ${
+            className={`flex__column flex__gap-bg cart__list ${
               openCart ? "displayed" : ""
             }`}
           >
@@ -118,7 +135,7 @@ export default function Navbar() {
                 <span>Your Cart is Empty</span>
               ) : (
                 <ul className="flex__list flex__column flex__gap-md">
-                  {wishList.map((el) => (
+                  {wishList.map((el, index) => (
                     <li
                       className="pd-sm cart__item flex flex__column flex__gap-sm"
                       key={el.name}
@@ -149,8 +166,9 @@ export default function Navbar() {
                 </ul>
               )}
             </div>
-            <div className="cart__info-container flex flex__sp-btw flex__item-center">
-              <span>Total:240 $</span>
+            <div className="cart__info-container flex flex__column flex__sp-btw">
+              <span className="font__1-1">Total: ${total}</span>
+              <span className="font__1-1">Total Items: {wishList.length}</span>
               <button className="button__pay">
                 <Link>Proceed to Pay</Link>
               </button>
