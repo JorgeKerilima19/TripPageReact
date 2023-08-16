@@ -147,6 +147,7 @@
 }
 .newsletter__input {
   border: thin solid var(--tertiary-color);
+  padding: 0.2rem 0.5rem;
 }
 .newsletter__container {
   background: linear-gradient(

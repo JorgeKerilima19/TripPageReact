@@ -129,15 +129,15 @@ export default function Navbar() {
               openCart ? "displayed" : ""
             }`}
           >
-            <h4 className="section__subtitle">Your Cart</h4>
+            <h4 className="section__subtitle title__shadow">Your Cart</h4>
             <div className="flex__list flex__column">
               {wishList.length <= 0 ? (
                 <span>Your Cart is Empty</span>
               ) : (
                 <ul className="flex__list flex__column flex__gap-md">
-                  {wishList.map((el, index) => (
+                  {wishList.map((el) => (
                     <li
-                      className="pd-sm cart__item flex flex__column flex__gap-sm"
+                      className="cart__item flex flex__column flex__gap-sm"
                       key={el.name}
                     >
                       <div className="flex flex__item-center flex__sp-btw flex__gap-md">
@@ -170,9 +170,7 @@ export default function Navbar() {
               <span className="font__1-1">Total: ${total}</span>
               <span className="font__1-1">Total Items: {wishList.length}</span>
               <Link to={"/pay"} className="width__full">
-                <button className="button__pay width__full">
-                  Proceed to Pay
-                </button>
+                <button className="button__pay width__full">Proceed</button>
               </Link>
             </div>
           </div>
