@@ -188,6 +188,9 @@ button {
 .font__1-1 {
   font-size: 1.1rem;
 }
+.font__1-2 {
+  font-size: 1.2rem;
+}
 .form__container-input {
   width: 100%;
   display: flex;

@@ -18,10 +18,11 @@ const TourContextProvider = ({ children }) => {
 
   const addToCart = (toAdd) => {
     const exists = wishList.some((item) => item.name === toAdd.name);
+    const newItem = { ...toAdd, url: window.location.pathname };
 
     if (!exists) {
-      setWishList((prevItems) => [...prevItems, toAdd]);
-      localStorage.setItem("whishList", JSON.stringify([...wishList, toAdd]));
+      setWishList((prevItems) => [...prevItems, newItem]);
+      localStorage.setItem("whishList", JSON.stringify([...wishList, newItem]));
     }
   };
 
