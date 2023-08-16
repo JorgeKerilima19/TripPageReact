@@ -169,9 +169,11 @@ export default function Navbar() {
             <div className="cart__info-container flex flex__column flex__sp-btw">
               <span className="font__1-1">Total: ${total}</span>
               <span className="font__1-1">Total Items: {wishList.length}</span>
-              <button className="button__pay">
-                <Link to={"/pay"}>Proceed to Pay</Link>
-              </button>
+              <Link to={"/pay"} className="width__full">
+                <button className="button__pay width__full">
+                  Proceed to Pay
+                </button>
+              </Link>
             </div>
           </div>
         </div>
