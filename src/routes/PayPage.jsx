@@ -13,7 +13,6 @@ import "../styles/payPage.css";
 
 export const PayPage = () => {
   const { wishList, removeFromCart } = useContext(TourContext);
-  console.log(window);
 
   return (
     <section className="section__pay flex pd-bg flex__container">
@@ -48,8 +47,11 @@ export const PayPage = () => {
 
                       <span className="font__wg-600">{el.name}</span>
                     </div>
+                    <span className="color__secondary font__1-1 font__wg-600">
+                      ${el.pricePerPerson} x <span>{el.tickets}</span>
+                    </span>
                     <span className="color__tertiary font__1-1 font__wg-600">
-                      ${el.pricePerPerson}
+                      {el.tickets * el.pricePerPerson}
                     </span>
                     <div></div>
                     <div className="flex flex__gap-md">

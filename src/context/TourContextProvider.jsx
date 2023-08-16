@@ -19,7 +19,6 @@ const TourContextProvider = ({ children }) => {
   const addToCart = (toAdd, tickets = 1) => {
     const exists = wishList.some((item) => item.name === toAdd.name);
     const newItem = { ...toAdd, url: window.location.pathname, tickets };
-    console.log(newItem);
 
     if (!exists) {
       setWishList((prevItems) => [...prevItems, newItem]);

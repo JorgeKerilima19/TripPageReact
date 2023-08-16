@@ -149,7 +149,7 @@ export default function Navbar() {
                         <div className="flex flex__column flex__item-end">
                           <span>{el.name}</span>
                           <span className="color__tertiary font__1-1">
-                            ${el.pricePerPerson}
+                            {el.tickets} {el.tickets > 1 ? "people" : "person"}
                           </span>
                         </div>
                       </div>
