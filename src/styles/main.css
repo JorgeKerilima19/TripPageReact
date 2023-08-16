@@ -38,13 +38,15 @@
   top: 0;
   overflow: auto;
   transition: 0.5s;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .displayed {
   display: flex;
   width: min(20rem, 98vw);
   height: max(17rem, var(--total-height));
   padding: 2rem 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .cart__item {
   border: thin solid var(--tertiary-color);
@@ -54,6 +56,12 @@
   height: 3.5rem;
   border-radius: 50%;
   object-fit: cover;
+}
+.cart__list > * {
+  visibility: hidden;
+}
+.cart__list.displayed > * {
+  visibility: visible;
 }
 .button__remove {
   background-color: var(--primary-color);

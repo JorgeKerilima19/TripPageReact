@@ -1,0 +1,4 @@
+.section__pay {
+  min-height: calc(100vh - 22rem);
+  background-color: aquamarine;
+}

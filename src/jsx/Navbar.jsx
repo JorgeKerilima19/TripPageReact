@@ -170,7 +170,7 @@ export default function Navbar() {
               <span className="font__1-1">Total: ${total}</span>
               <span className="font__1-1">Total Items: {wishList.length}</span>
               <button className="button__pay">
-                <Link>Proceed to Pay</Link>
+                <Link to={"/pay"}>Proceed to Pay</Link>
               </button>
             </div>
           </div>

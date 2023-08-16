@@ -1,6 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Home, About, Contact, Register, Services, TourPage } from "./routes";
+import {
+  Home,
+  About,
+  Contact,
+  Register,
+  Services,
+  TourPage,
+  PayPage,
+} from "./routes";
 import {
   Information,
   PlaceTour,
@@ -33,6 +41,7 @@ const App = () => {
             </Route>
           </Route>
           <Route path="/register" element={<Register />} />
+          <Route path="/pay" element={<PayPage />} />
         </Route>
       </Routes>
     </>
