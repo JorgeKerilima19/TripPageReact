@@ -1,0 +1,33 @@
+.slider__container {
+  background-color: aqua;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.slider__item-container {
+  width: max(20rem, 80%);
+  position: absolute;
+}
+.slider__item-img {
+  width: 80%;
+  height: 15rem;
+  object-fit: cover;
+}
+.slider__container .slider__item-container:nth-child(1) {
+  left: -5rem;
+  scale: 0.8;
+}
+.slider__container .slider__item-container:nth-child(2) {
+  right: -5rem;
+  scale: 0.8;
+}
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.slider__arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}

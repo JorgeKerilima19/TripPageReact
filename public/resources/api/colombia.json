@@ -7,8 +7,8 @@
   "places": [
     {
       "placeId": 1,
-      "name": "Rio de Janeiro",
-      "banner": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "name": "Cartagena",
+      "banner": "https://images.unsplash.com/photo-1583531352515-8884af319dc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "pricePerPerson": 600,
       "discount": true,
       "discountAmount": 30,
