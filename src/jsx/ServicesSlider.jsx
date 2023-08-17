@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -25,15 +27,47 @@ const popularTours = [
 ];
 
 const ServicesSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(2);
+
+  const nextSlide = () => {
+    const lastSlide = currentIndex === popularTours.length - 1;
+    const newIndex = lastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+  const previousSlide = () => {
+    const firstSlide = currentIndex === 0;
+    const newIndex = firstSlide ? popularTours.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div className="slider__container width__full flex__column flex flex__item-center ps__relative">
-      {popularTours.map((el) => (
-        <div className="slider__item-container flex flex__sp-center">
-          <img className="slider__item-img" src={el.src} />
-        </div>
-      ))}
-      <AiOutlineArrowLeft className="slider__arrow-left" />
-      <AiOutlineArrowRight className="slider__arrow-right" />
+    <div className="slider__container width__full ps__relative">
+      <div
+        style={{ backgroundImage: `url(${popularTours[currentIndex].src})` }}
+        className="slider__item-container ps__relative"
+      ></div>
+      <AiOutlineArrowLeft
+        onClick={previousSlide}
+        className="slider__arrow-left"
+      />
+      <AiOutlineArrowRight
+        onClick={nextSlide}
+        className="slider__arrow-right"
+      />
+      <div className="slider__dot-container">
+        {popularTours.map((el, index) => (
+          <span
+            key={el.name}
+            onClick={() => {
+              goToSlide(index);
+            }}
+            className="slider__dot"
+          ></span>
+        ))}
+      </div>
     </div>
   );
 };
