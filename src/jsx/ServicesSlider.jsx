@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -27,13 +27,14 @@ const popularTours = [
 ];
 
 const ServicesSlider = () => {
+  const timer = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(2);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const lastSlide = currentIndex === popularTours.length - 1;
     const newIndex = lastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, popularTours]);
   const previousSlide = () => {
     const firstSlide = currentIndex === 0;
     const newIndex = firstSlide ? popularTours.length - 1 : currentIndex - 1;
@@ -42,6 +43,18 @@ const ServicesSlider = () => {
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
+
+  useEffect(() => {
+    if (timer.current) {
+      clearTimeout(timer.current);
+    }
+    timer.current = setTimeout(() => {
+      nextSlide();
+    }, 2000);
+    return () => {
+      clearTimeout(timer.current);
+    };
+  }, [nextSlide]);
 
   return (
     <div className="slider__container width__full ps__relative">
