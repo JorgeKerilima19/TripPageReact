@@ -28,7 +28,11 @@ const popularTours = [
 
 const ServicesSlider = () => {
   const timer = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(2);
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [prevIndex, setPrevIndex] = useState(0);
+  const [postIndex, setPostIndex] = useState(currentIndex + 1);
+
+  //Helper Functions
 
   const nextSlide = useCallback(() => {
     const lastSlide = currentIndex === popularTours.length - 1;
@@ -44,7 +48,23 @@ const ServicesSlider = () => {
     setCurrentIndex(index);
   };
 
+  //Updating prev and next slide
+
+  const giveIndex = () => {
+    if (currentIndex === 0) {
+      setPrevIndex(popularTours.length - 1);
+    } else {
+      setPrevIndex(currentIndex - 1);
+    }
+    if (currentIndex === popularTours.length - 1) {
+      setPostIndex(0);
+    } else {
+      setPostIndex(currentIndex + 1);
+    }
+  };
+
   useEffect(() => {
+    giveIndex();
     if (timer.current) {
       clearTimeout(timer.current);
     }
@@ -59,9 +79,18 @@ const ServicesSlider = () => {
   return (
     <div className="slider__container width__full ps__relative">
       <div
+        style={{ backgroundImage: `url(${popularTours[prevIndex].src})` }}
+        className="slider__preIndex slider__item-container ps__relative"
+      ></div>
+      <div
         style={{ backgroundImage: `url(${popularTours[currentIndex].src})` }}
         className="slider__item-container ps__relative"
       ></div>
+      <div
+        style={{ backgroundImage: `url(${popularTours[postIndex].src})` }}
+        className="slider__postIndex slider__item-container ps__relative"
+      ></div>
+
       <AiOutlineArrowLeft
         onClick={previousSlide}
         className="slider__arrow-left"
