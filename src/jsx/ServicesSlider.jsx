@@ -74,7 +74,7 @@ const ServicesSlider = () => {
     }
     timer.current = setTimeout(() => {
       nextSlide();
-    }, 2000);
+    }, 3000);
     return () => {
       clearTimeout(timer.current);
     };
