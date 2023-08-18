@@ -120,7 +120,7 @@
   justify-content: center;
 }
 .hero-image_title {
-  font-size: max(4em, 8vw);
+  font-size: max(3em, 8vw);
 }
 .hero-image_slogan {
   font-size: max(2em, 4vw);

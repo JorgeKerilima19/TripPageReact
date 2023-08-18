@@ -219,6 +219,9 @@ button {
   outline: transparent;
   resize: none;
 }
+.index__front{
+  z-index: 100;
+}
 .list__item-square {
   width: 8rem;
   height: 3.5rem;
