@@ -76,21 +76,31 @@ const ServicesSlider = () => {
     };
   }, [nextSlide]);
 
+  const rotation = currentIndex * (360 / popularTours.length);
   return (
     <div className="slider__container width__full ps__relative">
       <div
-        style={{ backgroundImage: `url(${popularTours[prevIndex].src})` }}
-        className="slider__preIndex slider__item-container ps__relative"
-      ></div>
-      <div
-        style={{ backgroundImage: `url(${popularTours[currentIndex].src})` }}
-        className="slider__item-container ps__relative"
-      ></div>
-      <div
-        style={{ backgroundImage: `url(${popularTours[postIndex].src})` }}
-        className="slider__postIndex slider__item-container ps__relative"
-      ></div>
-
+        className="slider__items-container"
+        style={{ transform: `rotate (${rotation}deg)` }}
+      >
+        {popularTours.map((el, index) => (
+          <div
+            key={index}
+            style={{
+              backgroundImage: `url(${popularTours[index].src})`,
+            }}
+            className={`${
+              index === prevIndex
+                ? "prev"
+                : index === currentIndex
+                ? "index"
+                : index === postIndex
+                ? "post"
+                : "behind"
+            } slider__index slider__item-container ps__relative`}
+          ></div>
+        ))}
+      </div>
       <AiOutlineArrowLeft
         onClick={previousSlide}
         className="slider__arrow-left"
@@ -106,7 +116,7 @@ const ServicesSlider = () => {
             onClick={() => {
               goToSlide(index);
             }}
-            className="slider__dot"
+            className={`slider__dot ${currentIndex === index ? "current" : ""}`}
           ></span>
         ))}
       </div>
