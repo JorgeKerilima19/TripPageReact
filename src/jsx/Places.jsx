@@ -16,7 +16,7 @@ export const Places = () => {
   if (tour) {
     return (
       <section className="flex width__full flex__gap-bg">
-        <section className="flex flex__column flex__gap-md max__height pd-top-bottom__md">
+        <section className="scroll__primary-sm flex flex__column flex__gap-md max__height pd-top-bottom__md">
           {destination?.places?.map((el) => (
             <TourCard key={el.placeId} tour={el} />
           ))}

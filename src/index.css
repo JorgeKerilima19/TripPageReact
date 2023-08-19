@@ -251,6 +251,13 @@ button {
 .pd-sm {
   padding: 0.5rem;
 }
+.scroll__primary-sm::-webkit-scrollbar{
+  width: 0.3rem;
+}
+.scroll__primary-sm::-webkit-scrollbar-thumb{
+  border-radius: 0.1rem; 
+  background-color: var(--primary-color);
+}
 .section__container {
   display: flex;
   flex-direction: column;
