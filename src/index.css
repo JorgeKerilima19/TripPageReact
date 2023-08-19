@@ -68,13 +68,6 @@ button {
   background-color: var(--primary-color);
   color: var(--font-color-primary);
 }
-.container__cards {
-  min-height: 2rem;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
 .card__button-full {
   width: 90%;
   background-color: var(--primary-color);
@@ -82,35 +75,6 @@ button {
   padding: 0.5rem;
   color: var(--font-color-primary);
   font-size: 1.1em;
-  font-weight: 600;
-}
-.card__container-sm {
-  width: min(90%, 5rem);
-  padding: 0.8rem;
-  border-radius: 0.5rem;
-  min-height: 2rem;
-  background-color: var(--container-color);
-}
-.card__container-md {
-  width: min(90%, 16rem);
-  padding: 0.8rem;
-  border-radius: 0.5rem;
-  min-height: 2rem;
-  background-color: var(--container-color);
-}
-.card__container-big {
-  width: min(90%, 24rem);
-  padding: 0.8rem;
-  border-radius: 0.5rem;
-  min-height: 2rem;
-  background-color: var(--container-color);
-}
-.card__title {
-  font-size: 1.2em;
-  font-weight: 500;
-}
-.card__subtitle {
-  font-size: 1.1rem;
   font-weight: 600;
 }
 .center {

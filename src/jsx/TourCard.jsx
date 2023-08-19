@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
-import backToTop from "../helpers/functions/backToTop";
+import { useContext } from "react";
+import { TourContext } from "../context/TourContext";
 
 const TourCard = ({ tour }) => {
+  const { setTour } = useContext(TourContext);
+
   return (
-    <Link
-      to={`./${tour.placeId}`}
-      className="card__container-md flex flex__column flex__gap-sm flex__item-center ps__relative"
+    <div
       onClick={() => {
-        backToTop(352);
+        console.log(tour);
+        setTour(tour);
       }}
+      className="flex flex__column flex__gap-sm flex__item-center ps__relative"
     >
       <img
         className="destination-card__img width__90"
@@ -19,7 +21,7 @@ const TourCard = ({ tour }) => {
         <h4 className="card__title">{tour.name}</h4>
         <span className="card__price">$/{tour.pricePerPerson}</span>
       </div>
-    </Link>
+    </div>
   );
 };
 

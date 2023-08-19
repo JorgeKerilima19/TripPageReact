@@ -1,5 +1,5 @@
 import { TourContext } from "./TourContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const TourContextProvider = ({ children }) => {
   const [destination, setDestination] = useState("");
