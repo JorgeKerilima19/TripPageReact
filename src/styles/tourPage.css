@@ -17,9 +17,50 @@
 }
 .tour__info {
   position: sticky;
-  top: 0;
+  top: 5rem;
   height: var(--total-height);
-  padding: 5rem;
+}
+.tour__list-item__img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+}
+.tour__banner {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.tour__offer-container {
+  color: var(--tertiary-color);
+}
+.tour__offer {
+  background-color: var(--secondary-color);
+  color: var(--font-color-primary);
+  width: 2.3rem;
+  height: 2.2rem;
+  padding: 0.2rem;
+  position: absolute;
+  font-size: 0.8 rem;
+  top: -1.5rem;
+  left: 0;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  animation: offer 1s infinite alternate-reverse;
+}
+.tour__price-original {
+  font-size: 1.3rem;
+  text-decoration: line-through 0.2rem var(--secondary-color);
+  margin-right: 2rem;
+}
+.tour__price-final {
+  font-size: 1.5rem;
 }
 .tour__description {
   line-height: 1.8rem;
@@ -224,6 +265,16 @@
   to {
     height: 5rem;
     border-top-left-radius: 0.5rem;
+  }
+}
+@keyframes offer {
+  from {
+    top: -1.5rem;
+    transform: rotate(30deg);
+  }
+  to {
+    top: -1.8rem;
+    transform: rotate(-30deg);
   }
 }
 @media (max-width: 900px) {

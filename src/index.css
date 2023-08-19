@@ -183,7 +183,7 @@ button {
   outline: transparent;
   resize: none;
 }
-.index__front{
+.index__front {
   z-index: 100;
 }
 .list__item-square {
@@ -197,6 +197,10 @@ button {
   border-right: thin solid var(--tertiary-color);
   padding: 0.3rem;
   text-align: center;
+}
+.max__height {
+  max-height: var(--total-height);
+  overflow-y: scroll;
 }
 .mg-both__bg {
   margin-top: 5rem;
@@ -219,6 +223,9 @@ button {
 }
 .pd-top-bottom__sm {
   padding: 0.5rem 0;
+}
+.pd-top-bottom__md {
+  padding: 1rem 0;
 }
 .pd-right-left__sm {
   padding: 0 0.5rem;

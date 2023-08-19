@@ -7,19 +7,18 @@ const TourCard = ({ tour }) => {
   return (
     <div
       onClick={() => {
-        console.log(tour);
         setTour(tour);
       }}
       className="flex flex__column flex__gap-sm flex__item-center ps__relative"
     >
       <img
-        className="destination-card__img width__90"
+        className="tour__list-item__img width__90"
         src={tour.banner}
         alt=""
       />
       <div className="flex flex__sp-btw flex__item-center width__90">
         <h4 className="card__title">{tour.name}</h4>
-        <span className="card__price">$/{tour.pricePerPerson}</span>
+        <span className="card__price font__weight-600">$/{tour.pricePerPerson}</span>
       </div>
     </div>
   );

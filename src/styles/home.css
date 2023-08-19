@@ -32,10 +32,6 @@
 .Peru {
   background-color: rgb(255, 0, 0);
 }
-.destination-card__img {
-  height: 18rem;
-  object-fit: cover;
-}
 .destination-card__description {
   background-color: var(--container-color);
   width: 100%;
