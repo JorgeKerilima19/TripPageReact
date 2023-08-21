@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import backToTop from "../helpers/functions/backToTop";
 
 const popularTours = [
   {
@@ -88,7 +90,11 @@ const ServicesSlider = () => {
         style={{ transform: `rotate (${rotation}deg)` }}
       >
         {popularTours.map((el, index) => (
-          <div
+          <Link
+            onClick={() => {
+              backToTop(350);
+            }}
+            to={el.url}
             key={index}
             style={{
               backgroundImage: `url(${popularTours[index].src})`,
@@ -104,7 +110,7 @@ const ServicesSlider = () => {
             } slider__index slider__item-container ps__relative flex__container-center flex__gap-bg`}
           >
             <span className="section-title index__front">{el.name}</span>
-          </div>
+          </Link>
         ))}
       </div>
       <AiOutlineArrowLeft
