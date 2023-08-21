@@ -137,6 +137,9 @@ button {
   display: flex;
   list-style: none;
 }
+.flex__self-end {
+  align-self: flex-end;
+}
 .flex__container-center {
   display: flex;
   flex-direction: column;
@@ -251,11 +254,11 @@ button {
 .pd-sm {
   padding: 0.5rem;
 }
-.scroll__primary-sm::-webkit-scrollbar{
+.scroll__primary-sm::-webkit-scrollbar {
   width: 0.3rem;
 }
-.scroll__primary-sm::-webkit-scrollbar-thumb{
-  border-radius: 0.1rem; 
+.scroll__primary-sm::-webkit-scrollbar-thumb {
+  border-radius: 0.1rem;
   background-color: var(--primary-color);
 }
 .section__container {

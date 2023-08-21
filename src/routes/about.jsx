@@ -1,3 +1,4 @@
+import CEO from "../jsx/CEO";
 import HeroImage from "../jsx/HeroImage";
 import Information from "../jsx/Info";
 
@@ -11,6 +12,7 @@ export function About() {
           title="About"
           content="Since 20012, Sky Travel has been focused on bringing our customers the best in esteem and quality travel game plans. We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side, and giving corporate explorers hello there contact administrations to encourage their business travel needs."
         />
+        <CEO />
         <Information
           id={2}
           title="Privacy Policy"
