@@ -77,3 +77,19 @@
   transform: scale(0.1) translateX(0%);
   z-index: -1;
 }
+.service__ceo-container {
+  color: var(--font-color-primary);
+  background: linear-gradient(
+    248deg,
+    rgba(255, 127, 41, 1) 23%,
+    rgba(255, 75, 75, 1) 64%
+  );
+}
+.service__ceo-img {
+  width: min(100%, 15rem);
+}
+.service__ceo-range {
+  text-decoration: underline 0.2rem var(--tertiary-color);
+  line-height: 1rem;
+  text-underline-offset: 0.5rem;
+}
