@@ -5,7 +5,6 @@ import { Destinations as data } from "../helpers/data/destination";
 import ServicesSlider from "../jsx/ServicesSlider";
 
 import "../styles/service.css";
-import CEO from "../jsx/CEO";
 import Newsletter from "../jsx/Newsletter";
 
 export function Services() {

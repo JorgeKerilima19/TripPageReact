@@ -1,7 +1,9 @@
 import { TourContext } from "./TourContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const TourContextProvider = ({ children }) => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const [destination, setDestination] = useState("");
   const [tour, setTour] = useState("");
   const [tourEntries, setTourEntries] = useState("");
@@ -36,6 +38,20 @@ const TourContextProvider = ({ children }) => {
     );
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    console.log(screenWidth);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const largeScreen = screenWidth < 700;
+
   return (
     <TourContext.Provider
       value={{
@@ -49,6 +65,7 @@ const TourContextProvider = ({ children }) => {
         wishList,
         addToCart,
         removeFromCart,
+        largeScreen,
       }}
     >
       {children}

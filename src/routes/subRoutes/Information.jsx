@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { TourContext } from "../../context/TourContext";
 import { Places } from "../../jsx/Places";
 import CustomerReview from "../../jsx/CustomerReview";
+import Newsletter from "../../jsx/Newsletter";
 
 export const Information = () => {
   const { destination } = useContext(TourContext);
@@ -18,9 +19,7 @@ export const Information = () => {
           <h4 className="section-title">What Our Customers Have To Say </h4>
           <CustomerReview elements={2} />
         </section>
-        <div>About our guides</div>
-        <div>blog+newsLetter</div>
-        <div>reviews</div>
+        <Newsletter />
       </div>
     </>
   );

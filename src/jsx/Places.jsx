@@ -5,7 +5,7 @@ import TourCard from "./TourCard";
 import TourInfo from "./TourInfo";
 
 export const Places = () => {
-  const { destination, setTour, tour } = useContext(TourContext);
+  const { destination, setTour, tour, largeScreen } = useContext(TourContext);
 
   useEffect(() => {
     if (destination) {
@@ -15,8 +15,16 @@ export const Places = () => {
 
   if (tour) {
     return (
-      <section className="flex width__full flex__gap-bg">
-        <section className="scroll__primary-sm flex flex__column flex__gap-md max__height pd-top-bottom__md">
+      <section
+        className={`flex ${
+          largeScreen ? "flex__column" : ""
+        } width__full flex__gap-bg`}
+      >
+        <section
+          className={`scroll__primary-sm flex ${
+            largeScreen ? "" : "flex__column"
+          } flex__gap-md max__height pd-top-bottom__md`}
+        >
           {destination?.places?.map((el) => (
             <TourCard key={el.placeId} tour={el} />
           ))}

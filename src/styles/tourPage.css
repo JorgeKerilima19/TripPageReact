@@ -18,7 +18,10 @@
 .tour__info {
   position: sticky;
   top: 5rem;
-  height: var(--total-height);
+  min-height: var(--total-height);
+}
+.tour__list-item {
+  min-width: 15rem;
 }
 .tour__list-item__img {
   height: 10rem;
@@ -34,24 +37,13 @@
   color: var(--tertiary-color);
 }
 .tour__offer {
-  background-color: var(--secondary-color);
-  color: var(--font-color-primary);
+  color: var(--secondary-color);
   width: 2.3rem;
   height: 2.2rem;
   padding: 0.2rem;
-  position: absolute;
   font-size: 0.8 rem;
   top: -1.5rem;
   left: 0;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
   animation: offer 1s infinite alternate-reverse;
 }
 .tour__price-original {

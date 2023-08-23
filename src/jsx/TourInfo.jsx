@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import backToTop from "../helpers/functions/backToTop";
+import { TourContext } from "../context/TourContext";
 
 const TourInfo = ({ tour }) => {
   const [price, setPrice] = useState(0);
+  const { largeScreen } = useContext(TourContext);
 
   const getDiscount = () => {
     if (tour.discount) {
@@ -15,23 +17,28 @@ const TourInfo = ({ tour }) => {
       setPrice(tour.pricePerPerson);
     }
   };
-
   useEffect(() => {
     getDiscount();
   }, [tour]);
 
   return (
-    <section className="tour__info width__70 flex__container">
+    <section
+      className={`tour__info ${
+        largeScreen ? "width__full" : "width__70"
+      }  flex__container`}
+    >
       <div className="flex flex__sp-btw flex__wrap tour__offer-container">
         <h3 className="section__title">{tour.name}</h3>
         <div className="ps__relative">
           {tour.discount ? (
-            <>
+            <div>
               <span className="tour__price-original">
                 ${tour.pricePerPerson}
               </span>
-              <span className="tour__offer">{tour.discountAmount}%</span>
-            </>
+              <span className="tour__offer font__wg-600">
+                {tour.discountAmount}% off
+              </span>
+            </div>
           ) : (
             ""
           )}
