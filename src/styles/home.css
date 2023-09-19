@@ -99,8 +99,11 @@
   font-size: 0.9rem;
 }
 .homepage__review-container {
-  --primary-color: hsl(24, 100%, 85%);
-  background-color: var(--primary-color);
+  background: linear-gradient(
+    248deg,
+    rgba(255, 127, 41, 1) 23%,
+    rgba(255, 75, 75, 1) 64%
+  );
   min-height: 30rem;
 }
 .homepage__review-item__container {
@@ -154,10 +157,10 @@
   width: 100%;
   position: relative;
 }
-.newsletter__container>*{
+.newsletter__container > * {
   z-index: 100;
 }
-.newsletter__container::after{
+.newsletter__container::after {
   content: "";
   width: 100%;
   background-color: rgba(0, 0, 0, 0.233);
@@ -184,7 +187,7 @@
   .homepage__destinations {
     grid-template-columns: repeat(1, minmax(15rem, 2fr));
   }
-  .newsletter__container{
+  .newsletter__container {
     height: 100vh;
   }
 }
