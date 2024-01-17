@@ -99,7 +99,7 @@ const Features = () => {
       {features.map((el) => (
         <div
           key={el.name}
-          className=" flex flex__column flex__gap-sm pd-md homepage__feature-container ps__relative"
+          className=" flex flex__column flex__gap-sm pd-md flex__item-center homepage__feature-container ps__relative"
         >
           {el.img}
           <div className="flex flex__column flex__gap-sm">

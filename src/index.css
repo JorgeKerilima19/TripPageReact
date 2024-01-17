@@ -1,6 +1,7 @@
 html {
-  font-size: clamp(100%, 110%, 120%);
+  font-size: clamp(100%, 1.2rem, 1vw);
   font-family: "Raleway", sans-serif;
+  letter-spacing: 0.09rem;
 }
 *,
 ::after,
