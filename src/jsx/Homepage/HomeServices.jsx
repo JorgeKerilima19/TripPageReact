@@ -75,8 +75,8 @@ const HomeServices = () => {
         neque?
       </p>
       <div className="home-service__container">
-        {services.map((el) => (
-          <div>
+        {services.map((el, index) => (
+          <div key={index}>
             {el.img}
             <h5>{el.name}</h5>
           </div>
