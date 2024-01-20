@@ -9,9 +9,9 @@ export const Information = () => {
 
   return (
     <>
-      <div className="section__container flex__gap-bg width__90">
+      <div className="section__container flex__gap-bg width__full pd-bg">
         <h3 className="section__title">About {destination.name}</h3>
-        <p className="section__content tour__description  ">
+        <p className="section__content tour__description pd-bottom__bg">
           {destination.about}
         </p>
         <Places />

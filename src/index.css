@@ -231,8 +231,14 @@ button {
 .pd-top-bottom__md {
   padding: 1rem 0;
 }
+.pd-top-bottom__bg {
+  padding: 1.5rem 0;
+}
 .pd-right-left__sm {
   padding: 0 0.5rem;
+}
+.pd-right-left__md {
+  padding: 0 1.35rem;
 }
 .pd-left__sm {
   padding-left: 0.5rem;
@@ -277,7 +283,7 @@ button {
   font-weight: 500;
 }
 .section__content {
-  font-size: 1.1rem;
+  font-size: 1.09rem;
   font-weight: 300;
 }
 .text-alg__center {
