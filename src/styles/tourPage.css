@@ -28,6 +28,38 @@
   width: 100%;
   object-fit: cover;
 }
+.tour__list-item-card,
+.tour__list-item-card__1 {
+  z-index: 100;
+}
+.tour__list-item-card__price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.tour__list-item-card {
+  opacity: 0;
+  transition: 0.62s;
+}
+.tour__list-item-card::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: -1;
+  opacity: 0;
+}
+.tour__list-item-card:hover {
+  opacity: 1;
+}
+.tour__list-item-card:hover::after {
+  opacity: 1;
+}
+
+.tour__list-item-card__1 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .tour__banner {
   width: 100%;
   height: 18rem;

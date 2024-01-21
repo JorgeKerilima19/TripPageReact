@@ -20,15 +20,18 @@ export const Places = () => {
           largeScreen ? "flex__column" : ""
         } width__full flex__gap-bg`}
       >
-        <section
-          className={`scroll__primary-sm flex ${
-            largeScreen ? "" : "flex__column"
-          } flex__gap-md max__height pd-top-bottom__md`}
-        >
-          {destination?.places?.map((el) => (
-            <TourCard key={el.placeId} tour={el} />
-          ))}
-        </section>
+        <div>
+          <h2 className="color__primary">Our Tours</h2>
+          <section
+            className={`scroll__primary-sm flex ${
+              largeScreen ? "" : "flex__column"
+            } flex__gap-md max__height pd-top-bottom__md`}
+          >
+            {destination?.places?.map((el) => (
+              <TourCard key={el.placeId} tour={el} />
+            ))}
+          </section>
+        </div>
         <TourInfo tour={tour} />
       </section>
     );

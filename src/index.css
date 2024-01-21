@@ -150,6 +150,15 @@ button {
 .flex__wrap {
   flex-wrap: wrap;
 }
+.font__primary {
+  color: var(--font-color-primary);
+}
+.font__secondary {
+  color: var(--font-color-secondary);
+}
+.font__bold {
+  font-weight: bold;
+}
 .font__wg-600 {
   font-weight: 600;
 }
@@ -249,6 +258,9 @@ button {
 .pd-top__bg {
   padding-top: 2rem;
 }
+.pd-top__md {
+  padding-top: 2rem;
+}
 .pd-bottom__bg {
   padding-bottom: 2rem;
 }
@@ -312,4 +324,7 @@ button {
 }
 .width__md {
   width: 50%;
+}
+.height__full {
+  height: 100%;
 }

@@ -24,7 +24,7 @@ const TourInfo = ({ tour }) => {
   return (
     <section
       className={`tour__info ${
-        largeScreen ? "width__full" : "width__70"
+        largeScreen ? "width__full" : "width__70 pd-top__md"
       }  flex__container`}
     >
       <div className="flex flex__sp-btw flex__wrap tour__offer-container">
