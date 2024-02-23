@@ -43,7 +43,7 @@ export const TourReviews = () => {
             totalMealPoints +
             totalTransportPoints +
             totalOverAllPoints) /
-          6
+          8
         ).toFixed(1)
       );
     }

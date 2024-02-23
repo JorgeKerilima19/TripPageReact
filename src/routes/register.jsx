@@ -1,5 +1,5 @@
 import HeroImage from "../jsx/HeroImage";
-import FormRegister from "../jsx/FormRegister";
+import FormRegister from "../jsx/Register/FormRegister";
 
 export function Register() {
   return (

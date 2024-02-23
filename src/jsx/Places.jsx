@@ -16,7 +16,7 @@ export const Places = () => {
   if (tour) {
     return (
       <section
-        className={`flex ${
+        className={`flex pd-right-left__md ${
           largeScreen ? "flex__column" : ""
         } width__full flex__gap-bg`}
       >

@@ -48,16 +48,15 @@ const TourInfo = ({ tour }) => {
       </div>
       <img className="tour__banner" src={tour.photos[3]} alt="" />
       <p className="tour-info__body">{tour.about}</p>
-      <button className="center card__button-full">
-        <Link
-          onClick={() => {
-            backToTop(350);
-          }}
-          to={`./${tour.placeId}`}
-        >
-          See More
-        </Link>
-      </button>
+      <Link
+        onClick={() => {
+          backToTop(350);
+        }}
+        className="center card__button-full text-alg__center"
+        to={`./${tour.placeId}`}
+      >
+        See More
+      </Link>
     </section>
   );
 };

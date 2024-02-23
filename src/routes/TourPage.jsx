@@ -28,8 +28,8 @@ export function TourPage() {
         className="banner flex__container-center flex__gap-md"
         style={{ backgroundImage: `url(${destination.banner})` }}
       >
-        <h2>{destination.name}</h2>
-        <span>{destination.slogan}</span>
+        <h2 className="tourpage-title">{destination.name}</h2>
+        <span className="tourpage-slogan">{destination.slogan}</span>
         <Link className="banner-md__button" to={`/service`}>
           <BsArrowLeftCircleFill className="go-back" />
         </Link>

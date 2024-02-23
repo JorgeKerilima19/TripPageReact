@@ -1,3 +1,21 @@
+.tourpage-title,
+.tourpage-slogan,
+.tourpage-name {
+  font-family: "Sunshiney", cursive;
+  z-index: 100;
+}
+
+.tourpage-title {
+  font-weight: 600;
+  font-size: max(3rem, 4vw);
+}
+.tourpage-slogan {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.tourpage-name {
+  font-size: 2.4rem;
+}
 .banner,
 .banner__md {
   height: min(100vh, 22rem);
@@ -7,6 +25,16 @@
   background-position: center;
   position: relative;
   color: white;
+}
+.banner::before,
+.banner__md:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.329);
+  position: absolute;
 }
 .banner__md {
   height: 18rem;
@@ -18,7 +46,6 @@
 .tour__info {
   position: sticky;
   top: 5rem;
-  min-height: var(--total-height);
 }
 .tour__list-item {
   min-width: 15rem;
@@ -318,6 +345,7 @@
   .subNavbar_item-container {
     flex-direction: column;
     gap: 0.2rem;
+    width: 100%;
   }
   .link__container {
     width: 100%;
@@ -334,13 +362,15 @@
   }
   .tour__container {
     align-self: center;
-    width: 80%;
+    width: 100%;
     padding-left: 0;
+    padding: 0 2rem;
   }
   .aside {
     position: relative;
     left: 0;
-    width: 90%;
+    width: 100%;
+    border-radius: 0;
   }
 }
 @media (max-width: 500px) {

@@ -20,7 +20,7 @@ const Destinations = ({ item }) => {
             alt="Image1"
           />
         </div>
-        <div className="destination-card__description flex flex__column flex__sp-center flex__item-center flex__gap-sm text-alg__center">
+        <div className="destination-card__description flex flex__column flex__sp-center flex__item-center flex__gap-md text-alg__center">
           <h3 className="card__title">{item.title}</h3>
           <p className="card__p">{item.description}</p>
           <div className="destination-card__button flex flex__item-center width__60 flex__sp-btw flex__wrap">

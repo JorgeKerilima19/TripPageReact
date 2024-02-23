@@ -1,6 +1,6 @@
 import CEO from "../jsx/CEO";
 import HeroImage from "../jsx/HeroImage";
-import Information from "../jsx/Info";
+import Information from "../jsx/About/InformationAbout";
 
 export function About() {
   return (

@@ -17,7 +17,7 @@ import {
   TourLocation,
   TourPlan,
   TourReviews,
-} from "./routes/subRoutes";
+} from "./routes/tourRoute";
 
 import Navbar from "./jsx/Navbar";
 

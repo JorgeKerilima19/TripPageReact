@@ -11,7 +11,7 @@ export function Services() {
   return (
     <>
       <HeroImage src={"Service"} />
-      <div className="section__container flex__gap-bg pd-bg">
+      <div className="section__container flex__gap-bg">
         <h2 className="section-title">Popular Destinations</h2>
         <ServicesSlider />
         <h2 className="section-title">Countries To visit</h2>
@@ -20,7 +20,7 @@ export function Services() {
             return <Destinations key={index} item={item} />;
           })}
         </section>
-        <section className="flex flex__gap-bg mg-both__bg flex__wrap flex__item-center">
+        <section className="flex flex__gap-bg mg-both__bg flex__wrap flex__item-center pd-right-left__md">
           <img
             src="https://xsgames.co/randomusers/assets/avatars/female/11.jpg"
             alt="CEO"
