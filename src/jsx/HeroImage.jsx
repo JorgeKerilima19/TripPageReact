@@ -18,7 +18,7 @@ export default function HeroImage({ src }) {
               <div>
                 <h2 className="hero-image_title">{el.name}</h2>
                 <h3 className="hero-image_slogan">{el.textDescription}</h3>
-                <Link onClick={backToTop} to={"/service"}>
+                <Link onClick={backToTop} to={"/TripPageReact/service"}>
                   <button
                     className={el.title === "Home" ? "button__big" : "hide"}
                   >

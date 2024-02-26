@@ -43,7 +43,7 @@ const SubNavbar = () => {
       </ul>
       <Link
         className="link__container flex flex__item-center flex__sp-center"
-        to={`/service/${id}`}
+        to={`/TripPageReact/service/${id}`}
       >
         <BsArrowLeftCircleFill className="go-back" />
       </Link>

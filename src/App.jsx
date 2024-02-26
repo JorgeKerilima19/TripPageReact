@@ -25,12 +25,12 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/TripPageReact/" element={<Navbar />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/service/:id" element={<TourPage />}>
+          <Route path="/TripPageReact/about" element={<About />} />
+          <Route path="/TripPageReact/contact" element={<Contact />} />
+          <Route path="/TripPageReact/service" element={<Services />} />
+          <Route path="/TripPageReact/service/:id" element={<TourPage />}>
             <Route index element={<Information />} />
             <Route path=":placeId" element={<PlaceTour />}>
               <Route index path="" element={<TourInfo />} />
@@ -40,8 +40,8 @@ const App = () => {
               <Route path="reviews" element={<TourReviews />} />
             </Route>
           </Route>
-          <Route path="/register" element={<Register />} />
-          <Route path="/pay" element={<PayPage />} />
+          <Route path="/TripPageReact/register" element={<Register />} />
+          <Route path="/TripPageReact/pay" element={<PayPage />} />
         </Route>
       </Routes>
     </>

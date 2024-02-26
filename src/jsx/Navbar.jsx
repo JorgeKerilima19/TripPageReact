@@ -26,7 +26,7 @@ export const NavItems = [
   {
     title: "About",
     name: "Who are we?",
-    url: "/about",
+    url: "/TripPageReact/about",
     className: "svg-holder-image",
     image:
       "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -35,7 +35,7 @@ export const NavItems = [
   {
     title: "Service",
     name: "Our Destinations",
-    url: "/service",
+    url: "/TripPageReact/service",
     className: "svg-holder-image",
     image:
       "https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -44,7 +44,7 @@ export const NavItems = [
   {
     title: "Contact",
     name: "Need Help?",
-    url: "/contact",
+    url: "/TripPageReact/contact",
     className: "svg-holder-image",
     image:
       "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -53,7 +53,7 @@ export const NavItems = [
   {
     title: "Register",
     name: "Sign In",
-    url: "/register",
+    url: "/TripPageReact/register",
     className: "svg-holder-image",
     image:
       "https://images.unsplash.com/photo-1597667554307-885851e705c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
@@ -169,7 +169,7 @@ export default function Navbar() {
             <div className="cart__info-container flex flex__column flex__sp-btw">
               <span className="font__1-1">Total: ${total}</span>
               <span className="font__1-1">Total Items: {wishList.length}</span>
-              <Link to={"/pay"} className="width__full">
+              <Link to={"/TripPageReact/pay"} className="width__full">
                 <button className="button__pay width__full">Proceed</button>
               </Link>
             </div>

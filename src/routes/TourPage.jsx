@@ -30,7 +30,7 @@ export function TourPage() {
       >
         <h2 className="tourpage-title">{destination.name}</h2>
         <span className="tourpage-slogan">{destination.slogan}</span>
-        <Link className="banner-md__button" to={`/service`}>
+        <Link className="banner-md__button" to={`/TripPageReact/service`}>
           <BsArrowLeftCircleFill className="go-back" />
         </Link>
       </div>
