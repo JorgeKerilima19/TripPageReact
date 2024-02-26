@@ -83,7 +83,6 @@
 }
 .active-link {
   background-color: var(--tertiary-color);
-  border-radius: 64% 36% 49% 51% / 0% 100% 0% 100%;
   transition: border-radius 0.5s;
 }
 @media (max-width: 650px) {

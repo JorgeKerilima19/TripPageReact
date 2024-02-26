@@ -17,7 +17,7 @@ export const NavItems = [
     title: "Home",
     name: "Sky Travel",
     textDescription: "A New Sky, A New Life.",
-    url: "/",
+    url: "/TripPageReact/",
     className: "svg-holder-image",
     image:
       "https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
